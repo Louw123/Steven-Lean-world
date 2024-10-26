@@ -1,6 +1,6 @@
 import Game.Levels.DemoWorld.L01_HelloWorld
 
-World "DemoWorld"
+World "inception"
 Title "Demo World"
 
 Introduction "
