@@ -35,6 +35,7 @@ Dependency Inception → Ruby
 Dependency Inception → Saphire
 
 Dependency Ruby → Garnet
-Dependency saphire → Garnet
+Dependency Saphire → Garnet
+--TODO: Allways check if all dependencies are correct
 /-! Build the game. Show's warnings if it found a problem with your game. -/
 MakeGame
