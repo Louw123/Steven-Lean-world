@@ -1,6 +1,6 @@
 import GameServer.Commands
 World "Saphire"
-Level 3
+Level 2
 Title "add_zero"
 
 Introduction "
