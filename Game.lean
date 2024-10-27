@@ -35,6 +35,7 @@ Saphire image is by TheOffColors in the Steven universe wiki
 -- CoverImage "images/cover.png"
 Dependency Inception → Ruby
 Dependency Inception → Saphire
+
 Dependency Ruby → Garnet
 Dependency saphire → Garnet
 /-! Build the game. Show's warnings if it found a problem with your game. -/

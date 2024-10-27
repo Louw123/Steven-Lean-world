@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.7.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Sun Oct 27 02:28:41 2024\n"
+"POT-Creation-Date: Sun Oct 27 02:33:41 2024\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: en\n"
@@ -37,7 +37,7 @@ msgid "Simple tactics"
 msgstr ""
 
 #: Game.Levels.Ruby.Simple_tactics
-msgid "Lets look at our first tactic: `rfl`\n"
+msgid "Ruby:Lets look at our first tactic: `rfl`\n"
 "\n"
 "rfl stands for `reflexivity of equality`. This states that a=a will be allways be a=a no matter what you change.\n"
 "Try it out."
@@ -51,18 +51,12 @@ msgstr ""
 msgid "There you go. Lets see annother tactic."
 msgstr ""
 
-#: Game.Levels.Ruby.Simple_tactics
-msgid "`rfl` stands for `reflexivity of equality`. This states that a=a will allways be a=a no matter what you change.\n"
-"This is useful in closing arrithmatic goals."
-msgstr ""
-
 #: Game.Levels.Ruby.Rewrite_respond
 msgid "Rewrite → Respond"
 msgstr ""
 
 #: Game.Levels.Ruby.Rewrite_respond
-msgid "Lets look at our next tactic: `rw` and `rewrite`\n"
-"\n"
+msgid "Ruby: Lets look at our next tactic: `rw` and `rewrite`\n"
 "Both of then do the same thing. However there is one difference between them.\n"
 "Figure it out."
 msgstr ""
@@ -72,9 +66,9 @@ msgid "Given that a is equal to n, prove that a = n"
 msgstr ""
 
 #: Game.Levels.Ruby.Rewrite_respond
-msgid "Ruby: Heres the difference `rw` has rfl built in while `rewrite` does not.\n"
+msgid "Ruby: Heres the difference `rw` has `rfl` built in while `rewrite` does not.\n"
 "This means that in order for you to finish the goal, you must use `rfl` after the `rewrite` in order to close the goal.\n"
-"Because of this `rewrite` is not used allot in proofs. You know what to do now."
+"`rewrite` is not used allot in proofs because of this. You know what to do now."
 msgstr ""
 
 #: Game.Levels.Ruby.Rewrite_respond
@@ -102,13 +96,88 @@ msgid "Ruby: Tactics are importtant to lean. Tactics are used to change, create,
 "Lets see some tactics."
 msgstr ""
 
+#: Game.Levels.Saphire.Reflexivity
+msgid "Reflexivity"
+msgstr ""
+
+#: Game.Levels.Saphire.Reflexivity
+msgid "Lets look at our first theorem: rfl\n"
+"\n"
+"`rfl` stands for `reflexivity of equality`. This states that a=a will be allways be a=a, no matter what you change.\n"
+"`rfl` only works if the both sides of the equal sign is exactly the same. (e.g. a=a, b=b, a+b=a+b, 1+2=1+2)\n"
+"Lets try it."
+msgstr ""
+
+#: Game.Levels.Saphire.Reflexivity
+msgid "Given a, prove that a = a"
+msgstr ""
+
+#: Game.Levels.Saphire.Reflexivity
+msgid "Well done. Lets see another theorem of rfl"
+msgstr ""
+
+#: Game.Levels.Saphire.Reflexivity
+msgid "`apply` is a fundemental tactic in lean.\n"
+"Without it all other tactics dont exist.\n"
+"It allows you to manipulate the proof without `rw`.\n"
+"This is useful when using a proof in which it does not use the `a=b` format."
+msgstr ""
+
+#: Game.Levels.Saphire.Reflexivity
+msgid "rfl stands for `reflexivity of equality`. This states that a=a will be allways be a=a no matter what you change.\n"
+"Try it out."
+msgstr ""
+
+#: Game.Levels.Saphire.Reflexivity
+msgid "This proof is simmilar to to the theorem `rfl`.\n"
+"It is recommended to use `rfl` instead of `Eq.refl`"
+msgstr ""
+
+#: Game.Levels.Saphire.Reflexivity
+msgid "`refl` stands for `reflexivity of equality`. This states that a=a will be allways be a=a, no matter what you change.\n"
+"`Iff.refl` is similar to rfl. It is not constructive, meaning it can only prove that that both sides of the equal sign is exact.\n"
+"(e.g. a=a, b=b, a+b=b+a, 2+4=2+4)"
+msgstr ""
+
+#: Game.Levels.Saphire.add_zero
+msgid "add_zero"
+msgstr ""
+
+#: Game.Levels.Saphire.add_zero
+msgid "Saphire: Lets look at our first proof add_zero"
+msgstr ""
+
+#: Game.Levels.Saphire.add_zero
+msgid "Given a, prove that a = a"
+msgstr ""
+
+#: Game.Levels.Saphire.add_zero
+msgid "Saphire: Well done. Now we have all of the theorems needed for our next world."
+msgstr ""
+
+#: Game.Levels.Saphire.add_zero
+msgid "Eq.refl is simular to the theorem rfl.\n"
+"However, because it is a Constructor, it can be use to prove simple arrithmatic that could be tedious with rfl."
+msgstr ""
+
 #: Game.Levels.Saphire
 msgid "Saphire"
 msgstr ""
 
 #: Game.Levels.Saphire
-msgid "Saphire: Theorems are important to prove anything in lean. Even the simpliest theorem require a multitude of therorems.\n"
-"We are going to make simple proofs, that in which will be used later."
+msgid "Saphire: Theorems are important to prove anything in lean. Even the simpliest theorem require a multitude of therorems to prove that theorem.\n"
+"We are going to use simple theorems, and make simple proofs that in which will be used in a later world.\n"
+"When you use a tactic, lean `apply`s a multitude of subsequent proofs to it.\n"
+"You can just use apply to finish every single goal.\n"
+"So for right now, we will be only using `apply` to prove proofs."
+msgstr ""
+
+#: Game.Levels.Garnet
+msgid "Garnet"
+msgstr ""
+
+#: Game.Levels.Garnet
+msgid "Now, we can begin with simple arithmatic proofs and work our way up from here."
 msgstr ""
 
 #: Game
