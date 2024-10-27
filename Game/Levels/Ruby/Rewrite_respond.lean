@@ -19,7 +19,7 @@ There you go. Now lets see annothet tactic
 "
 /--
 rfl stands for `reflexivity of equality`. This states that a=a will allways be a=a no matter what you change.
-This is useful in closing arrithmatic goals.
+This is useful in closing arrithmatic goals with equalities.
 -/
 TacticDoc rfl
 
