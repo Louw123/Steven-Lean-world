@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.7.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Sat Oct 26 18:10:08 2024\n"
+"POT-Creation-Date: Sun Oct 27 02:05:13 2024\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: en\n"
@@ -20,88 +20,95 @@ msgstr ""
 msgid "intermediate goal solved! 🎉"
 msgstr ""
 
-#: Game.Levels.inception
-msgid "inception"
+#: Game.Levels.Inception
+msgid "Inception"
 msgstr ""
 
-#: Game.Levels.inception
-msgid "Garnet: To explain the program itself, I must unfuse to show each explain how lean handles proofs.\n"
-"Then we will do simple arithmetic.\n"
-"\n"
-"Ruby and saphire: Lets begin\n"
-"\n"
-"There are two levels you can pick.\n"
-"One for theroems, while another is for tactics. One level will build on the other and vice versa.\n"
-"In the end you will have everything you will need in order to prove simple arrithmatic."
+#: Game.Levels.Inception
+msgid "Garnet: In order to begin, I have to show you how lean prove things.\n"
+"There are two parts that are import for you, and so I have to unfuse myself in order to explain.\n"
+"There are two areas you can go. Both of them build on eachother.\n"
+"So completing one will help you figure out how to complete the other.\n"
+"Ruby and saphire: So lets begin."
 msgstr ""
 
-#: Game.Levels.Ruby.simpletactics
+#: Game.Levels.Ruby.Simple_tactics
 msgid "Simple tactics"
 msgstr ""
 
-#: Game.Levels.Ruby.simpletactics
-msgid "Ruby: We will first look at our first tactic: `rfl`\n"
-"`rfl` is an abreviation of 'reflexivity of equality' meaning that the result is the same\n"
-"no matter what. For example $$a=a$$, $$b=b$$ and more advanced equations like $$a+b=a+b$$ can be prove via `rfl`\n"
+#: Game.Levels.Ruby.Simple_tactics
+msgid "Lets look at our first tactic: `rfl`\n"
+"\n"
+"rfl stands for `reflexivity of equality`. This states that a=a will be allways be a=a no matter what you change.\n"
 "Try it out."
 msgstr ""
 
-#: Game.Levels.Ruby.simpletactics
-msgid "Ruby: There you go Its that simple. Now lets see annother tactic."
+#: Game.Levels.Ruby.Simple_tactics
+msgid "Given n, prove that n is equal to n"
 msgstr ""
 
-#: Game.Levels.Ruby.Rewrite_Respond
-msgid "Rewrite, Respond"
+#: Game.Levels.Ruby.Simple_tactics
+msgid "There you go. Lets see annother tactic."
 msgstr ""
 
-#: Game.Levels.Ruby.Rewrite_Respond
-msgid "Ruby: Lets look at annother one `rw` and `rewrite`. Both of them do the same thing. However there is one difference between them. See if you can spot it"
+#: Game.Levels.Ruby.Simple_tactics
+msgid "`rfl` stands for `reflexivity of equality`. This states that a=a will allways be a=a no matter what you change.\n"
+"This is useful in closing arrithmatic goals."
 msgstr ""
 
-#: Game.Levels.Ruby.Rewrite_Respond
-msgid "Ruby: Heres the difference, `rw` has `rfl` built in while `rewrite` does not.\n"
-"So when using `rewrite` to close a goal you must use rfl in the end.\n"
+#: Game.Levels.Ruby.Rewrite_respond
+msgid "Rewrite → Respond"
+msgstr ""
+
+#: Game.Levels.Ruby.Rewrite_respond
+msgid "Lets look at our next tactic: `rw` and `rewrite`\n"
 "\n"
-"However, it is common practice to use `rw` instead of `rewrite` for conciseness."
+"Both of then do the same thing. However there is one difference between them.\n"
+"Figure it out."
 msgstr ""
 
-#: Game.Levels.Ruby.Rewrite_Respond
-msgid "Ruby: Now you know what you need for this world and later worlds.\n"
-"More tactics will be introduce in other worlds when needed"
+#: Game.Levels.Ruby.Rewrite_respond
+msgid "Given that a is equal to n, prove that a = n"
 msgstr ""
 
-#: Game.Levels.ruby
-msgid "Ruby: simple tactics"
+#: Game.Levels.Ruby.Rewrite_respond
+msgid "Ruby: Heres the difference `rw` has rfl built in while `rewrite` does not.\n"
+"This means that in order for you to finish the goal, you must use `rfl` after the `rewrite` in order to close the goal.\n"
+"Because of this `rewrite` is not used allot in proofs. You know what to do now."
 msgstr ""
 
-#: Game.Levels.ruby
-msgid "Ruby: This world will explain tactics. Tactics are like plans on a warfield.\n"
-"\n"
-"Tactics are used to change, create a proof, and close a proof.\n"
-"These are the only ways to complete proofs in lean"
+#: Game.Levels.Ruby.Rewrite_respond
+msgid "There you go. Thats all you need.\n"
+"More tactics are available in later levels."
 msgstr ""
 
-#: Game.Levels.Saphire.theroems
-msgid "Theorems: Building blocks"
+#: Game.Levels.Ruby.Rewrite_respond
+msgid "`rw` rewrites the goal that has the pattern $$a=b$$ and tries to close the goal using `rfl`.\n"
+"It does not throw an error if `rfl` fails.\n"
+"example:`rw[rfl]`"
 msgstr ""
 
-#: Game.Levels.Saphire.theroems
-msgid "Saphire:Theorems in lean are built by `apply`ing arguments upon eachother.\n"
-"  Some theorems are built when it gets used in tactics. While others can be used.\n"
-"  One example is `rfl` Lets see how you try it."
+#: Game.Levels.Ruby.Rewrite_respond
+msgid "`rewrite` rewrites the goal that has the pattern $$a=b$$. However you must use `rfl` to close the goal because it does not have `rfl` built into the tactic itself.\n"
+"It does not throw an error if `rfl` fails."
 msgstr ""
 
-#: Game.Levels.Saphire.theroems
-msgid "Saphire: Great. Now lets see annother theorem of rfl."
+#: Game.Levels.Ruby
+msgid "Ruby"
 msgstr ""
 
-#: Game.Levels.saphire
-msgid "Saphire: building blocks"
+#: Game.Levels.Ruby
+msgid "Ruby: Tactics are importtant to lean. Tactics are used to change, create, and close goals.\n"
+"Lets see some tactics."
 msgstr ""
 
-#: Game.Levels.saphire
-msgid "Saphire: This world will proove all of the theorems needed for you to prove simple arrithmatic using built-in theorems.\n"
-"This world only uses one tactic `apply`."
+#: Game.Levels.Saphire
+msgid "Saphire"
+msgstr ""
+
+#: Game.Levels.Saphire
+msgid "Saphire: Theorems are important to prove anything in lean. Even the simpliest theorem require a multitude of therorems.\n"
+"We are going to make simple proofs, that in which will be used later."
 msgstr ""
 
 #: Game
@@ -109,24 +116,23 @@ msgid "Hello World Game"
 msgstr ""
 
 #: Game
-msgid "Through some sort of accidentnt you tried when making a wormhole. You accidentally enter a different world.\n"
-"There are humans. arround. You thought that you are home. Just then, you notice, big donut store.\n"
-"You realize tat you are in beach city. In the world you know as steven universe.\n"
+msgid "Through some sort of accident you tried when making a wormhole. You accidentally enter a different world.\n"
+"There are living breathing humans arround. You thought that you are home. Just then, you notice, the big donut store.\n"
+"You realize that you are in beach city. You realize that you are in the world, know as steven universe.\n"
 "You know that steven, and the crystal gems are powerful enough to take you back to home.\n"
-"However, when meeting them, you quickly realize that they are working on something. They are working on the something called the 'LEAN theorem prover'\n"
-"Just before you close a gem spots you.\n"
+"However, when meeting them, you quickly realize that they are working on something. They are working on the something in the 'LEAN: theorem prover'\n"
+"Just before you leave and figure out a different way a gem spots you.\n"
 "\n"
-"Garnet: Hello there human. Looks like you come from a different world. Your memory could have been erased with the trip.\n"
-"I and the crystal gems will help you learn how to prove things in lean.\n"
+"Garnet: Hello there human. Looks like you come from a different world. Your memory could have been erased with the trip, or maybe not.\n"
+"I and the crystal gems will help you learn how to prove things in lean and in doing so will figure out how to fix the portal.\n"
 "\n"
-"Lean is a proof asistant and a flexible language that allows you to create proofs.\n"
-"Using tactics to try and prove the proof.\n"
-"We will start with simple proofs and beginner tactics to more advanced proofs, like logic in sets and functional proofs"
+"Lean is a proof asistant and a flexible language that allows you to create proofs, by Using tactics to try and prove the proof.\n"
+"We will start with simple proofs and beginner tactics to more advanced proofs, to logic in sets and functional proofs"
 msgstr ""
 
 #: Game
-msgid "Steven universe and its characters is the proprety of cartoon network and by turner broadcasting service.\n"
-"This is a fan-made creation, not an offical product from cartoon network."
+msgid "Steven universe and its characters is the proprety of cartoon network and by proxy, turner broadcasting networks.\n"
+"This is a fan-made creation, not an offical cartoon network product."
 msgstr ""
 
 #: Game
@@ -134,5 +140,8 @@ msgid "Game Template"
 msgstr ""
 
 #: Game
-msgid "A steven universe story for the lean"
+msgid "A steven universe story for the lean. Great for beginners.\n"
+"Images:\n"
+"Ruby image is by Gord0Hong0 in the Steven universe wiki.\n"
+"Saphire image is by TheOffColors in the Steven universe wiki"
 msgstr ""
