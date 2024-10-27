@@ -12,7 +12,7 @@ Statement: a = a := by
   apply Eq.refl
 
 Conclusion "
-Saphire: Well done. Now we have all of the theorems needed.
+Saphire: Well done. Now we have all of the theorems needed for our next world.
 "
 /--
 Eq.refl is simular to the theorem rfl.
