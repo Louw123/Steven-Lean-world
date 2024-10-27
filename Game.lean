@@ -1,6 +1,7 @@
 import Game.Levels.Inception
 import Game.Levels.Ruby
 import Game.Levels.Saphire
+import Game.Levels.Garnet
 -- Here's what we'll put on the title screen
 Title "Hello World Game"
 Introduction "
