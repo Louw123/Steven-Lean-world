@@ -18,7 +18,7 @@ Statement: a = a := by
 
 
 Conclusion "
-Well done. Lets see another theorem of rfl
+saphire Well done. Lets see another theorem of rfl
 "
 /--
 `apply` is a fundemental tactic in lean.

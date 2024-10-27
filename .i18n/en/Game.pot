@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.7.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Sun Oct 27 02:38:39 2024\n"
+"POT-Creation-Date: Sun Oct 27 04:59:57 2024\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: en\n"
@@ -113,7 +113,7 @@ msgid "Given a, prove that a = a"
 msgstr ""
 
 #: Game.Levels.Saphire.Reflexivity
-msgid "Well done. Lets see another theorem of rfl"
+msgid "saphire Well done. Lets see another theorem of rfl"
 msgstr ""
 
 #: Game.Levels.Saphire.Reflexivity
@@ -209,8 +209,6 @@ msgid "Game Template"
 msgstr ""
 
 #: Game
-msgid "A steven universe story for the lean. Great for beginners.\n"
-"Images:\n"
-"Ruby image is by Gord0Hong0 in the Steven universe wiki.\n"
+msgid "A steven universe story for the lean. Great for beginners. Ruby image is by Gord0Hong0 in the Steven universe wiki.\n"
 "Saphire image is by TheOffColors in the Steven universe wiki"
 msgstr ""

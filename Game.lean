@@ -26,9 +26,7 @@ This is a fan-made creation, not an offical cartoon network product.
 /-! Information to be displayed on the servers landing page. -/
 Languages "English"
 CaptionShort "Game Template"
-CaptionLong "A steven universe story for the lean. Great for beginners.
-Images:
-Ruby image is by Gord0Hong0 in the Steven universe wiki.
+CaptionLong "A steven universe story for the lean. Great for beginners. Ruby image is by Gord0Hong0 in the Steven universe wiki.
 Saphire image is by TheOffColors in the Steven universe wiki
 "
 -- Prerequisites "" -- add this if your game depends on other games
