@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.7.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Sun Oct 27 16:21:01 2024\n"
+"POT-Creation-Date: Sun Oct 27 18:16:21 2024\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: en\n"
@@ -26,10 +26,12 @@ msgstr ""
 
 #: Game.Levels.Inception
 msgid "Garnet: In order to begin, I have to show you how lean prove things.\n"
-"There are two parts that are import for you, and so I have to unfuse myself in order to explain.\n"
-"There are two areas you can go. Both of them build on eachother.\n"
-"So completing one will help you figure out how to complete the other.\n"
-"Ruby and saphire: So lets begin."
+"There are two parts that are important for you, and so I have to unfuse myself in order to explain those important things to you.\n"
+"\n"
+"Ruby: There are two areas you can go. Both of them build on eachother.\n"
+"\n"
+"Saphire: So completing one will help you figure out how to complete the other.\n"
+"Ruby and saphire: So lets begin!"
 msgstr ""
 
 #: Game.Levels.Ruby.Simple_tactics
@@ -37,7 +39,7 @@ msgid "Simple tactics"
 msgstr ""
 
 #: Game.Levels.Ruby.Simple_tactics
-msgid "Ruby:Lets look at our first tactic: `rfl`\n"
+msgid "Ruby: Lets look at our first tactic: `rfl`\n"
 "\n"
 "rfl stands for `reflexivity of equality`. This states that a=a will be allways be a=a no matter what you change.\n"
 "Try it out."
@@ -76,17 +78,6 @@ msgid "There you go. Thats all you need.\n"
 "More tactics are available in later levels."
 msgstr ""
 
-#: Game.Levels.Ruby.Rewrite_respond
-msgid "`rw` rewrites the goal that has the pattern $$a=b$$ and tries to close the goal using `rfl`.\n"
-"It does not throw an error if `rfl` fails.\n"
-"example:`rw[rfl]`"
-msgstr ""
-
-#: Game.Levels.Ruby.Rewrite_respond
-msgid "`rewrite` rewrites the goal that has the pattern $$a=b$$. However you must use `rfl` to close the goal because it does not have `rfl` built into the tactic itself.\n"
-"It does not throw an error if `rfl` fails."
-msgstr ""
-
 #: Game.Levels.Ruby
 msgid "Ruby"
 msgstr ""
@@ -104,7 +95,8 @@ msgstr ""
 msgid "Lets look at our first theorem: rfl\n"
 "\n"
 "`rfl` stands for `reflexivity of equality`. This states that a=a will be allways be a=a, no matter what you change.\n"
-"`rfl` only works if the both sides of the equal sign is exactly the same. (e.g. a=a, b=b, a+b=a+b, 1+2=1+2)\n"
+"`rfl` only works if the both sides of the equal sign is exactly the same. (e.g. a=a, b=b)\n"
+"However, simple arithmetic proofs can also be proven via the theorem`rfl`.\n"
 "Lets try it."
 msgstr ""
 
@@ -117,15 +109,8 @@ msgid "saphire Well done. Lets see another theorem of rfl"
 msgstr ""
 
 #: Game.Levels.Saphire.Reflexivity
-msgid "`apply` is a fundemental tactic in lean.\n"
-"Without it all other tactics dont exist.\n"
-"It allows you to manipulate the proof without `rw`.\n"
-"This is useful when using a proof in which it does not use the `a=b` format."
-msgstr ""
-
-#: Game.Levels.Saphire.Reflexivity
-msgid "rfl stands for `reflexivity of equality`. This states that a=a will be allways be a=a no matter what you change.\n"
-"Try it out."
+msgid "the theorem rfl stands for `reflexivity of equality`. This states that a=a will be allways be a=a no matter what you change.\n"
+"rfl is also a tactic."
 msgstr ""
 
 #: Game.Levels.Saphire.Reflexivity
@@ -144,20 +129,38 @@ msgid "add_zero"
 msgstr ""
 
 #: Game.Levels.Saphire.add_zero
-msgid "Saphire: Lets look at our first proof add_zero"
+msgid "Saphire: Lets look at our first proof add_zero.\n"
+"We will learn more what ℕ is in the next world, but we will ignore it for right now."
 msgstr ""
 
 #: Game.Levels.Saphire.add_zero
-msgid "Given a, prove that a = a"
+msgid "Given n as a Nat, prove that a plus 0 equals a"
 msgstr ""
 
 #: Game.Levels.Saphire.add_zero
-msgid "Saphire: Well done. Now we have all of the theorems needed for our next world."
+msgid "Saphire: Well done."
 msgstr ""
 
 #: Game.Levels.Saphire.add_zero
 msgid "Eq.refl is simular to the theorem rfl.\n"
-"However, because it is a Constructor, it can be use to prove simple arrithmatic that could be tedious with rfl."
+"However, it is more specialize in arithmetic cases. So it is recomended to use the `rfl` theorem instead."
+msgstr ""
+
+#: Game.Levels.Saphire.add_succ
+msgid "add_succ"
+msgstr ""
+
+#: Game.Levels.Saphire.add_succ
+msgid "Saphire: Lets look at our first proof add_zero.\n"
+"We will learn more what ℕ is in the next world, but we will ignore it for right now."
+msgstr ""
+
+#: Game.Levels.Saphire.add_succ
+msgid "Given n as a Nat, prove that a plus 0 equals a"
+msgstr ""
+
+#: Game.Levels.Saphire.add_succ
+msgid "Saphire: Well done. Now we have all of the theorems needed for our next world."
 msgstr ""
 
 #: Game.Levels.Saphire
@@ -177,7 +180,8 @@ msgid "Garnet"
 msgstr ""
 
 #: Game.Levels.Garnet
-msgid "Now, we can begin with simple arithmatic proofs and work our way up from here."
+msgid "Now, we can begin with simple arithmatic proofs and work our way up from here.\n"
+"I will guide you through for more complicated assumptions."
 msgstr ""
 
 #: Game
@@ -195,7 +199,7 @@ msgid "Through some sort of accident you tried when making a wormhole. You accid
 "Garnet: Hello there human. Looks like you come from a different world. Your memory could have been erased with the trip, or maybe not.\n"
 "I and the crystal gems will help you learn how to prove things in lean and in doing so will figure out how to fix the portal.\n"
 "\n"
-"Lean is a proof asistant and a flexible language that allows you to create proofs, by Using tactics to try and prove the proof.\n"
+"Lean is a proof asistant and a flexible language that allows you to create proofs, by using tactics to try and prove the proof.\n"
 "We will start with simple proofs and beginner tactics to more advanced proofs, to logic in sets and functional proofs"
 msgstr ""
 
@@ -209,6 +213,8 @@ msgid "Game Template"
 msgstr ""
 
 #: Game
-msgid "A steven universe story for the lean. Great for beginners. Ruby image is by Gord0Hong0 in the Steven universe wiki.\n"
-"Saphire image is by TheOffColors in the Steven universe wiki"
+msgid "A steven universe story for the lean. Great for beginners.\n"
+"Ruby image is by Gord0Hong0 in the Steven universe wiki.\n"
+"Saphire image is by TheOffColors in the Steven universe wiki.\n"
+"Garnet image is by Zombiewizard45 in the Steven universe wiki."
 msgstr ""

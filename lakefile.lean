@@ -54,3 +54,4 @@ package Game where
 
 @[default_target]
 lean_lib Game
+

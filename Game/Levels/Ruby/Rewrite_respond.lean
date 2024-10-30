@@ -25,17 +25,4 @@ Conclusion "
 There you go. Thats all you need.
 More tactics are available in later levels.
 "
-/--
-`rw` rewrites the goal that has the pattern $$a=b$$ and tries to close the goal using `rfl`.
-It does not throw an error if `rfl` fails.
-example:`rw[rfl]`
--/
-TacticDoc rw
-/--
-`rewrite` rewrites the goal that has the pattern $$a=b$$. However you must use `rfl` to close the goal because it does not have `rfl` built into the tactic itself.
-It does not throw an error if `rfl` fails.
--/
-
-TacticDoc rewrite
-NewTactic rw
-NewHiddenTactic rewrite
+NewTactic rw rewrite

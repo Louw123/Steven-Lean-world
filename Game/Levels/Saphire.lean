@@ -1,6 +1,8 @@
 import Game.Levels.Saphire.Reflexivity
 import Game.Levels.Saphire.add_zero
+import Game.Levels.Saphire.add_succ
 Title "Saphire"
+World "Saphire"
 Image "images/Saphire.png"
 Introduction
 "
