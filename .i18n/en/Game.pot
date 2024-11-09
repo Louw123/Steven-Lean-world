@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.7.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Sun Oct 27 18:16:21 2024\n"
+"POT-Creation-Date: Sat Nov  9 23:50:38 2024\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: en\n"
@@ -50,7 +50,7 @@ msgid "Given n, prove that n is equal to n"
 msgstr ""
 
 #: Game.Levels.Ruby.Simple_tactics
-msgid "There you go. Lets see annother tactic."
+msgid "Ruby: There you go. Lets see annother tactic."
 msgstr ""
 
 #: Game.Levels.Ruby.Rewrite_respond
@@ -92,7 +92,7 @@ msgid "Reflexivity"
 msgstr ""
 
 #: Game.Levels.Saphire.Reflexivity
-msgid "Lets look at our first theorem: rfl\n"
+msgid "Saphire:Lets look at our first theorem: rfl\n"
 "\n"
 "`rfl` stands for `reflexivity of equality`. This states that a=a will be allways be a=a, no matter what you change.\n"
 "`rfl` only works if the both sides of the equal sign is exactly the same. (e.g. a=a, b=b)\n"
@@ -105,7 +105,14 @@ msgid "Given a, prove that a = a"
 msgstr ""
 
 #: Game.Levels.Saphire.Reflexivity
-msgid "saphire Well done. Lets see another theorem of rfl"
+msgid "saphire: Well done. Lets see another theorem of rfl"
+msgstr ""
+
+#: Game.Levels.Saphire.Reflexivity
+msgid "`apply` is a fundemental tactic in lean.\n"
+"Without it all other tactics dont exist.\n"
+"It allows you to manipulate the proof without `rw`.\n"
+"This is useful when using a proof in which it does not obey the `a=b` format."
 msgstr ""
 
 #: Game.Levels.Saphire.Reflexivity
@@ -116,12 +123,6 @@ msgstr ""
 #: Game.Levels.Saphire.Reflexivity
 msgid "This proof is simmilar to to the theorem `rfl`.\n"
 "It is recommended to use `rfl` instead of `Eq.refl`"
-msgstr ""
-
-#: Game.Levels.Saphire.Reflexivity
-msgid "`refl` stands for `reflexivity of equality`. This states that a=a will be allways be a=a, no matter what you change.\n"
-"`Iff.refl` is similar to rfl. It is not constructive, meaning it can only prove that that both sides of the equal sign is exact.\n"
-"(e.g. a=a, b=b, a+b=b+a, 2+4=2+4)"
 msgstr ""
 
 #: Game.Levels.Saphire.add_zero
@@ -139,11 +140,6 @@ msgstr ""
 
 #: Game.Levels.Saphire.add_zero
 msgid "Saphire: Well done."
-msgstr ""
-
-#: Game.Levels.Saphire.add_zero
-msgid "Eq.refl is simular to the theorem rfl.\n"
-"However, it is more specialize in arithmetic cases. So it is recomended to use the `rfl` theorem instead."
 msgstr ""
 
 #: Game.Levels.Saphire.add_succ
@@ -175,13 +171,131 @@ msgid "Saphire: Theorems are important to prove anything in lean. Even the simpl
 "So for right now, we will be only using `apply` to prove proofs."
 msgstr ""
 
+#: Game.Doc.Theorem
+msgid "A very strict `rfl`. It is reccomended to use `rfl` instead if rfl"
+msgstr ""
+
+#: Game.Levels.Garnet.numberlogic
+msgid "numbers"
+msgstr ""
+
+#: Game.Levels.Garnet.numberlogic
+msgid "Garnet: Before we begin we must know how numbers are handled in lean.\n"
+"All numbers are shown are in ℕ, or the Natual numbers. Natual numbers are numbers that are whole and not negative.\n"
+"There are two cases that ℕ uses:\n"
+"`zero =>` it means that the case of the target number is zero\n"
+"`succ =>` it means that the target number is a `succ`essor of the number.\n"
+"In this world a successor of a number is a number plus 1 ($$succ n=n+1$$)."
+msgstr ""
+
+#: Game.Levels.Garnet.numberlogic
+msgid "one plus one equals two"
+msgstr ""
+
+#: Game.Levels.Garnet.numberlogic
+msgid "Garnet: There we go. You must know that all numbers are under this assumption of succesion.\n"
+"A number (A) is a successor of (A-1).\n"
+"You can extrapolate to infinity if infinity is a countable number.\n"
+"Now lets prove zero_add and succ_add before proving addition communality"
+msgstr ""
+
+#: Game.Levels.Garnet.numberlogic
+msgid "Self explanatory"
+msgstr ""
+
+#: Game.Levels.Garnet.numberlogic
+msgid "Self explanatory"
+msgstr ""
+
+#: Game.Levels.Garnet.numberlogic
+msgid "Self explanatory"
+msgstr ""
+
+#: Game.Levels.Garnet.numberlogic
+msgid "Self explanatory"
+msgstr ""
+
+#: Game.Levels.Garnet.numberlogic
+msgid "This theorem says any number n plus a (succ)essor of n is equal to n. $$a+succ(b)=succ(a+b)$$"
+msgstr ""
+
+#: Game.Levels.Garnet.induction
+msgid "Induction"
+msgstr ""
+
+#: Game.Levels.Garnet.induction
+msgid "Garnet: `inducton' is a tactic that allows you to split a goal into two goals.`\n"
+"Using the two cases we can use that I mentioned before, we can set up the induction tactic like this:\n"
+"`\n"
+"induction n with\n"
+"|zero => ?_\n"
+"|succ => ?_\n"
+"`\n"
+"Garnet: You can change the `?_` if you like. Lean counts them as a synthetic hole.\n"
+"Like any hole you can put anything into it.\n"
+"Now lets prove zero_add."
+msgstr ""
+
+#: Game.Levels.Garnet.induction
+msgid "given n is a Non-negative number, zero plus n is equal to n"
+msgstr ""
+
+#: Game.Levels.Garnet.induction
+msgid "Garnet:We have to prove that zero plus zero is equal to zero. This case is simple"
+msgstr ""
+
+#: Game.Levels.Garnet.induction
+msgid "Garnet: Now we have to prove that zero plus the successor of a is equal to the successor of a"
+msgstr ""
+
+#: Game.Levels.Garnet.induction
+msgid "Garnet: Good job. All tactics for now on are available. We need these tactics later on."
+msgstr ""
+
+#: Game.Levels.Garnet.induction
+msgid "induction splits a goal in two, depending on what type it is.\n"
+"For example Nat (or ℕ) is an inductive type that can split into two cases:\n"
+"`zero` and `succ`.\n"
+"You first prove the `zero` case first, next you use the theorem to prove `succ`."
+msgstr ""
+
+#: Game.Levels.Garnet.succ_add
+msgid "succ_add"
+msgstr ""
+
+#: Game.Levels.Garnet.succ_add
+msgid "Garnet: Lets use the same technique with add zero and impliment succ_add.\n"
+"Here we are working with successors. `rfl` wont work with complicated variables like this.\n"
+"Lets use induction instead"
+msgstr ""
+
+#: Game.Levels.Garnet.succ_add
+msgid "given a and b is a Non-negative number, a successor of a plus b is equal to the successor of a plus b"
+msgstr ""
+
+#: Game.Levels.Garnet.succ_add
+msgid "Garnet: This time we must prove that 1 + b is equal to 1 +(0 + b) in which it is equal to one"
+msgstr ""
+
+#: Game.Levels.Garnet.succ_add
+msgid "Garnet: This time we must prove that the successor of (the successor of a number) plus a different number is equal to the successor to the successor for annother number plus annother number.\n"
+"Thanks to the induction tactic we now have a hypothesis showing the theorem we proved before."
+msgstr ""
+
+#: Game.Levels.Garnet.succ_add
+msgid "Garnet: Good job, now we can prove the communicative proprety of addition."
+msgstr ""
+
 #: Game.Levels.Garnet
 msgid "Garnet"
 msgstr ""
 
 #: Game.Levels.Garnet
-msgid "Now, we can begin with simple arithmatic proofs and work our way up from here.\n"
-"I will guide you through for more complicated assumptions."
+msgid "Garnet: Now, we can begin with simple arithmatic proofs and work our way up from here.\n"
+"I will guide you through for more complicated assumptions.\n"
+"\n"
+"Garnet: Before we begin it is recomended that you press </>, in order to change to editor mode.\n"
+"Otherwise we can contine on."
 msgstr ""
 
 #: Game
@@ -191,21 +305,26 @@ msgstr ""
 #: Game
 msgid "Through some sort of accident you tried when making a wormhole. You accidentally enter a different world.\n"
 "There are living breathing humans arround. You thought that you are home. Just then, you notice, the big donut store.\n"
-"You realize that you are in beach city. You realize that you are in the world, know as steven universe.\n"
+"You realize that you are in beach city and that you are in the world, know as steven universe.\n"
 "You know that steven, and the crystal gems are powerful enough to take you back to home.\n"
-"However, when meeting them, you quickly realize that they are working on something. They are working on the something in the 'LEAN: theorem prover'\n"
+"However, when meeting them, you quickly realize that they are working on something. They are working on the something in the 'LE∀N: theorem prover'\n"
 "Just before you leave and figure out a different way a gem spots you.\n"
 "\n"
 "Garnet: Hello there human. Looks like you come from a different world. Your memory could have been erased with the trip, or maybe not.\n"
 "I and the crystal gems will help you learn how to prove things in lean and in doing so will figure out how to fix the portal.\n"
+"However, I want you to know what LE∀N Is\n"
 "\n"
-"Lean is a proof asistant and a flexible language that allows you to create proofs, by using tactics to try and prove the proof.\n"
+"\n"
+"LE∀N is a proof asistant and a flexible language that allows you to create proofs, by using tactics to try and prove the proof.\n"
 "We will start with simple proofs and beginner tactics to more advanced proofs, to logic in sets and functional proofs"
 msgstr ""
 
 #: Game
-msgid "Steven universe and its characters is the proprety of cartoon network and by proxy, turner broadcasting networks.\n"
-"This is a fan-made creation, not an offical cartoon network product."
+msgid "Steven universe and its characters is the proprety of cartoon network and by proxy, turner broadcasting.\n"
+"This is a fan-made creation, not an offical cartoon network product.\n"
+"Ruby image is by Gord0Hong0 in the Steven universe wiki.\n"
+"Saphire image is by TheOffColors in the Steven universe wiki.\n"
+"Garnet image is by Zombiewizard45 in the Steven universe wiki."
 msgstr ""
 
 #: Game
@@ -213,8 +332,5 @@ msgid "Game Template"
 msgstr ""
 
 #: Game
-msgid "A steven universe story for the lean. Great for beginners.\n"
-"Ruby image is by Gord0Hong0 in the Steven universe wiki.\n"
-"Saphire image is by TheOffColors in the Steven universe wiki.\n"
-"Garnet image is by Zombiewizard45 in the Steven universe wiki."
+msgid "A steven universe story for the Lean theorem prover. Great for beginners."
 msgstr ""

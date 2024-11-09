@@ -1,4 +1,7 @@
 import GameServer.Commands
+
+
+
 World "Ruby"
 Level 2
 Title "Rewrite → Respond"
@@ -26,3 +29,5 @@ There you go. Thats all you need.
 More tactics are available in later levels.
 "
 NewTactic rw rewrite
+
+

@@ -15,5 +15,5 @@ Statement: n = n := by
   rfl
 
 Conclusion "
-There you go. Lets see annother tactic.
+Ruby: There you go. Lets see annother tactic.
 "

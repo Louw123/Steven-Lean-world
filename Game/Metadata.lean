@@ -1,6 +1,5 @@
 import GameServer.Commands
-import Game.Doc.Tactics
-import Game.Doc.Theorems
+import Game.Doc.Theorem
 --import Mathlib.Tactic.Common
 
 /-! Use this file to add things that should be available in all levels.
@@ -15,8 +14,11 @@ a suggestion.
 in a random order. Therefore, you should keep the structure of one file lean file per world
 that imports all its levels.
 -/
-/- Writer: because mathlib is not working some how, I must implement each matlib tactic into lean.
+
+/- Writer: because mathlib is not working somehow.
+This means that I must implement each matlib tactic into lean.
 -/
+
 /- Garnet: I must implement the inducion tactic into lean. However, because mathlib does not exist,
   It means is that I must implement the tactics all by my self.
 -/

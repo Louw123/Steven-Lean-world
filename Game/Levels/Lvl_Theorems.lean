@@ -1,8 +1,5 @@
 import GameServer.Commands
-/--
-This theorem says any number n plus a (succ)essor of n is equal to n. $$a+succ(b)=succ(a+b)$$
--/
-TheoremDoc add_succ as "add_succ" in "addition"
+
 /--
 Eq.refl is simular to the theorem rfl.
 However, it is more specialize in arithmetic cases. So it is recomended to use the `rfl` theorem instead.

@@ -4,7 +4,7 @@ Level 1
 Title "Reflexivity"
 
 Introduction "
-Lets look at our first theorem: rfl
+Saphire:Lets look at our first theorem: rfl
 
 `rfl` stands for `reflexivity of equality`. This states that a=a will be allways be a=a, no matter what you change.
 `rfl` only works if the both sides of the equal sign is exactly the same. (e.g. a=a, b=b)
@@ -19,9 +19,16 @@ Statement: a = a := by
 
 
 Conclusion "
-saphire Well done. Lets see another theorem of rfl
+saphire: Well done. Lets see another theorem of rfl
 "
 
+/--
+`apply` is a fundemental tactic in lean.
+Without it all other tactics dont exist.
+It allows you to manipulate the proof without `rw`.
+This is useful when using a proof in which it does not obey the `a=b` format.
+-/
+TacticDoc apply
 
 NewTactic apply
 
@@ -29,14 +36,13 @@ NewTactic apply
 the theorem rfl stands for `reflexivity of equality`. This states that a=a will be allways be a=a no matter what you change.
 rfl is also a tactic.
 -/
-TheoremDoc rfl as "rfl" in "Refl"
+TheoremDoc rfl as "rfl" in "refl"
 
 /--
 This proof is simmilar to to the theorem `rfl`.
 It is recommended to use `rfl` instead of `Eq.refl`
 -/
 TheoremDoc Eq.refl as "Eq.refl" in "refl"
-
 
 
 NewTheorem rfl Eq.refl Iff.refl
