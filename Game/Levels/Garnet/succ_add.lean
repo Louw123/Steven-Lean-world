@@ -12,14 +12,19 @@ Statement (a b:Nat): Nat.succ a + b = Nat.succ (a + b) := by {
   induction a with
   | zero => {
       Hint "Garnet: This time we must prove that 1 + b is equal to 1 +(0 + b) in which it is equal to one"
-      exact Nat.succ_add Nat.zero b
+      apply Nat.succ_add Nat.zero b
   }
   | succ f=>{
     Hint "Garnet: This time we must prove that the successor of (the successor of a number) plus a different number is equal to the successor to the successor for annother number plus annother number.
     Thanks to the induction tactic we now have a hypothesis showing the theorem we proved before."
-    exact Nat.succ_add (f + 1) b
+    apply Nat.succ_add (f + 1) b
 
     }
 
 }
 Conclusion "Garnet: Good job, now we can prove the communicative proprety of addition."
+/--this theorem says that n+0 is equal to zero-/
+TheoremDoc Nat.zero_add as "Nat.zero_add" in "Nat"
+/--proof that zero plus a is equal to a.-/
+TheoremDoc Nat.add_zero as "Nat.add_zero" in "Nat"
+NewTheorem Nat.zero_add Nat.add_zero

@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.7.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Sat Nov  9 23:50:38 2024\n"
+"POT-Creation-Date: Sun Nov 10 19:42:38 2024\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: en\n"
@@ -147,7 +147,7 @@ msgid "add_succ"
 msgstr ""
 
 #: Game.Levels.Saphire.add_succ
-msgid "Saphire: Lets look at our first proof add_zero.\n"
+msgid "Saphire: Lets look at our final proof for this world add_succ.\n"
 "We will learn more what ℕ is in the next world, but we will ignore it for right now."
 msgstr ""
 
@@ -189,14 +189,14 @@ msgid "Garnet: Before we begin we must know how numbers are handled in lean.\n"
 msgstr ""
 
 #: Game.Levels.Garnet.numberlogic
-msgid "one plus one equals two"
+msgid "two plus two equals four"
 msgstr ""
 
 #: Game.Levels.Garnet.numberlogic
 msgid "Garnet: There we go. You must know that all numbers are under this assumption of succesion.\n"
 "A number (A) is a successor of (A-1).\n"
-"You can extrapolate to infinity if infinity is a countable number.\n"
-"Now lets prove zero_add and succ_add before proving addition communality"
+"You can extrapolate it to infinity if infinity is a countable number in the natual numbers.\n"
+"Now lets prove zero_add and succ_add before proving addition communality."
 msgstr ""
 
 #: Game.Levels.Garnet.numberlogic
@@ -219,12 +219,16 @@ msgstr ""
 msgid "This theorem says any number n plus a (succ)essor of n is equal to n. $$a+succ(b)=succ(a+b)$$"
 msgstr ""
 
+#: Game.Levels.Garnet.numberlogic
+msgid "the proof that Nat.zero is equal to the number zero."
+msgstr ""
+
 #: Game.Levels.Garnet.induction
 msgid "Induction"
 msgstr ""
 
 #: Game.Levels.Garnet.induction
-msgid "Garnet: `inducton' is a tactic that allows you to split a goal into two goals.`\n"
+msgid "Garnet: `inducton` is a tactic that allows you to split a goal into two goals.\n"
 "Using the two cases we can use that I mentioned before, we can set up the induction tactic like this:\n"
 "`\n"
 "induction n with\n"
@@ -245,6 +249,10 @@ msgid "Garnet:We have to prove that zero plus zero is equal to zero. This case i
 msgstr ""
 
 #: Game.Levels.Garnet.induction
+msgid "Garnet: It is recomended to use `simp` for this part."
+msgstr ""
+
+#: Game.Levels.Garnet.induction
 msgid "Garnet: Now we have to prove that zero plus the successor of a is equal to the successor of a"
 msgstr ""
 
@@ -257,6 +265,14 @@ msgid "induction splits a goal in two, depending on what type it is.\n"
 "For example Nat (or ℕ) is an inductive type that can split into two cases:\n"
 "`zero` and `succ`.\n"
 "You first prove the `zero` case first, next you use the theorem to prove `succ`."
+msgstr ""
+
+#: Game.Levels.Garnet.induction
+msgid "simp simplifies the proof."
+msgstr ""
+
+#: Game.Levels.Garnet.induction
+msgid ""
 msgstr ""
 
 #: Game.Levels.Garnet.succ_add
@@ -286,6 +302,48 @@ msgstr ""
 msgid "Garnet: Good job, now we can prove the communicative proprety of addition."
 msgstr ""
 
+#: Game.Levels.Garnet.succ_add
+msgid "this theorem says that n+0 is equal to zero"
+msgstr ""
+
+#: Game.Levels.Garnet.succ_add
+msgid "proof that zero plus a is equal to a."
+msgstr ""
+
+#: Game.Levels.Garnet.comm_add
+msgid "add_assoc"
+msgstr ""
+
+#: Game.Levels.Garnet.comm_add
+msgid "Garnet: now lets figure out add_succ. You may do it yourself."
+msgstr ""
+
+#: Game.Levels.Garnet.comm_add
+msgid "given a and b are nat, prove that a plus b is equal to b plus a"
+msgstr ""
+
+#: Game.Levels.Garnet.comm_add
+msgid "Garnet: There you go. Now lets finally prove add_assoc."
+msgstr ""
+
+#: Game.Levels.Garnet.add_assoc
+msgid "add_assoc"
+msgstr ""
+
+#: Game.Levels.Garnet.add_assoc
+msgid "Garnet: now lets figure out add_succ. You may do it yourself."
+msgstr ""
+
+#: Game.Levels.Garnet.add_assoc
+msgid "Garnet: There you go. Now you now know how to use lean for arrithmatic.\n"
+"To learn more about arrithmatic logic play \"Natural Number Game\" in lean.\n"
+"But for right now, find the other crystal gems."
+msgstr ""
+
+#: Game.Levels.Garnet.add_assoc
+msgid "This theorem proves that a successor of m plus n is equal to succ added by m and n."
+msgstr ""
+
 #: Game.Levels.Garnet
 msgid "Garnet"
 msgstr ""
@@ -296,6 +354,195 @@ msgid "Garnet: Now, we can begin with simple arithmatic proofs and work our way 
 "\n"
 "Garnet: Before we begin it is recomended that you press </>, in order to change to editor mode.\n"
 "Otherwise we can contine on."
+msgstr ""
+
+#: Game.Levels.Garnet
+msgid "Garnet: Now, we can begin with simple arithmatic proofs and work our way up from here.\n"
+"I will guide you through for more complicated assumptions.\n"
+"\n"
+"Garnet: Before we begin it is recomended that you press </>, in order to change to editor mode.\n"
+"Otherwise we can contine on.\n"
+"\n"
+"Garnet:It is also reccomended that if you dont have all the proofs needed to complete the proof\n"
+"click on the house and move the rules slider down to none until you complete the world"
+msgstr ""
+
+#: Game.Levels.Pearl.Simpcity_implies_simplicity
+msgid "Simpcity implies simplicity"
+msgstr ""
+
+#: Game.Levels.Pearl.Simpcity_implies_simplicity
+msgid "Pearl: I read through all text books that are made by the humans.\n"
+"One of the humans named \"René Descartes\" kick started skeptism and logic.\n"
+"He started it off with this simple proof:\n"
+"cogito, ergo sum./I think, therefore I am\n"
+"This is a great starting point for a simple proof. We can formalize this into this:\n"
+"I think implies that I am.\n"
+"Prepositional logic only proves the variables. Meaning we dont know if the variable true or false.\n"
+"Lets say that `A` is means thinking and existing.\n"
+"We can start the proof by using the intro."
+msgstr ""
+
+#: Game.Levels.Pearl.Simpcity_implies_simplicity
+msgid "Given that A is a preposition, A implies A"
+msgstr ""
+
+#: Game.Levels.Pearl.Simpcity_implies_simplicity
+msgid "Now we must prove the proof via `assumption` or `exact` to close the goal."
+msgstr ""
+
+#: Game.Levels.Pearl.Simpcity_implies_simplicity
+msgid "Pearl: Thats great, lets see if we can prove preopsition logic using and"
+msgstr ""
+
+#: Game.Levels.Pearl.Simpcity_implies_simplicity
+msgid "intro creates a assumption if the proof implies something.\n"
+"Can be given a costom name if you use the name in the intro tactic"
+msgstr ""
+
+#: Game.Levels.Pearl.Simpcity_implies_simplicity
+msgid "assumption closes a proof if the proof is exactly the assumption."
+msgstr ""
+
+#: Game.Levels.Pearl.Simpcity_implies_simplicity
+msgid "exact closes a proof if the proof is exactly the assumption that is used in the tactic.."
+msgstr ""
+
+#: Game.Levels.Pearl.Talking
+msgid "Talking to you"
+msgstr ""
+
+#: Game.Levels.Pearl.Talking
+msgid "Pearl: Think about this: You know that im talking to you. We are in same space. This means, that I and you are in the same room.\n"
+"If we say that P is me, and Y as you, we can build a proof via an and stantemnt."
+msgstr ""
+
+#: Game.Levels.Pearl.Talking
+msgid "Given that Y and p are Prop, that A is P and B is Y, prove that P and Y is true."
+msgstr ""
+
+#: Game.Levels.Pearl.Talking
+msgid "This proof cant be solved via intro. We must use `constructor` to break the and case down into two cases"
+msgstr ""
+
+#: Game.Levels.Pearl.Talking
+msgid "This proof can be solved via `exact` or `assumption`."
+msgstr ""
+
+#: Game.Levels.Pearl.Talking
+msgid "This proof can be solved via `exact` or `assumption`."
+msgstr ""
+
+#: Game.Levels.Pearl.Talking
+msgid "Pearl: Thats great, lets see if we can prove preopsition logic using not."
+msgstr ""
+
+#: Game.Levels.Pearl.Talking
+msgid "Constructor splits the proof into two proofs. In which you have to prove."
+msgstr ""
+
+#: Game.Levels.Pearl.Space
+msgid "Space"
+msgstr ""
+
+#: Game.Levels.Pearl.Space
+msgid "Pearl: We are not in outer space.\n"
+"If we are talking in outer space then you die, but we are in some sort of outer space right?\n"
+"We can prove this using not. We wont use `assumption`.\n"
+"You must use `contradiction` to solve this proof."
+msgstr ""
+
+#: Game.Levels.Pearl.Space
+msgid "Pearl: We can start with intro."
+msgstr ""
+
+#: Game.Levels.Pearl.Space
+msgid "Pearl: We can prove the proof using contradiction or by apply absurd."
+msgstr ""
+
+#: Game.Levels.Pearl.Space
+msgid "Pearl: Thats great, lets see if we can prove preopsition logic using or"
+msgstr ""
+
+#: Game.Levels.Pearl.Space
+msgid "Contradiction proves a logical contradiction, using the absurd theorem."
+msgstr ""
+
+#: Game.Levels.Pearl.Space
+msgid "This one is simular to exact however, it proves a contradiction."
+msgstr ""
+
+#: Game.Levels.Pearl.space_or_time
+msgid "Talking to you"
+msgstr ""
+
+#: Game.Levels.Pearl.space_or_time
+msgid "Pearl: Think about this: Which one do you travel back and forth through space or time?\n"
+"If S repersents space and T repersents time we can prove this via or. or has a special proprety that allows you to prove one side or the other."
+msgstr ""
+
+#: Game.Levels.Pearl.space_or_time
+msgid "Pearl: The left and right tactics are useful in manipulating or proofs.\n"
+"An example of the use of this tactic is this proof. You can use the left or right tactic."
+msgstr ""
+
+#: Game.Levels.Pearl.space_or_time
+msgid "Pearl: Thats great, lets see if we can prove functions."
+msgstr ""
+
+#: Game.Levels.Pearl.space_or_time
+msgid "left grabs the left side of or"
+msgstr ""
+
+#: Game.Levels.Pearl.space_or_time
+msgid "right grabs the right side of or"
+msgstr ""
+
+#: Game.Levels.Pearl.modus_ponens
+msgid "modus_tollens"
+msgstr ""
+
+#: Game.Levels.Pearl.modus_ponens
+msgid "Pearl:modus ponens is latin for \"affirming mode\".\n"
+"This proof is usefull in coverting one item to annother.\n"
+"We can use the `revert` tactic."
+msgstr ""
+
+#: Game.Levels.Pearl.modus_ponens
+msgid "Given that hpq is P implies Q, and p is P, Prove q"
+msgstr ""
+
+#: Game.Levels.Pearl.modus_ponens
+msgid "Pearl:you know what to do now."
+msgstr ""
+
+#: Game.Levels.Pearl.modus_ponens
+msgid "Revert does the opposite the intro."
+msgstr ""
+
+#: Game.Levels.Pearl.modus_tollens
+msgid "modus_ponens"
+msgstr ""
+
+#: Game.Levels.Pearl.modus_tollens
+msgid "Pearl:modus tollens is latin for \"mode that denies by denying\".\n"
+"This proof is usefull in coverting one item to annother."
+msgstr ""
+
+#: Game.Levels.Pearl.modus_tollens
+msgid "Pearl: congrats on completing, my world now you only have one more world for this level.\n"
+"To learn more about logic proving, you can play: \"A Lean Intro to Logic\""
+msgstr ""
+
+#: Game.Levels.Pearl
+msgid "Pearl"
+msgstr ""
+
+#: Game.Levels.Pearl
+msgid "Pearl: Logic gives order to chaos. Without it, we wont understand anything.\n"
+"Even the simplist things must obey simple logic. Logic has many forms.\n"
+"Our form of logic is called Prepositional logic.\n"
+"We will start with a simple proof."
 msgstr ""
 
 #: Game
@@ -324,7 +571,8 @@ msgid "Steven universe and its characters is the proprety of cartoon network and
 "This is a fan-made creation, not an offical cartoon network product.\n"
 "Ruby image is by Gord0Hong0 in the Steven universe wiki.\n"
 "Saphire image is by TheOffColors in the Steven universe wiki.\n"
-"Garnet image is by Zombiewizard45 in the Steven universe wiki."
+"Garnet image is by Zombiewizard45 in the Steven universe wiki.\n"
+"Pearl image is by RylerGamerDBS, uploaded by Zacatero in the Steven universe wiki."
 msgstr ""
 
 #: Game

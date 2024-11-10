@@ -11,13 +11,13 @@ There are two cases that ℕ uses:
 `succ =>` it means that the target number is a `succ`essor of the number.
 In this world a successor of a number is a number plus 1 ($$succ n=n+1$$).
 "
-/-- one plus one equals two-/
+/-- two plus two equals four-/
 Statement: 2+2=4 := by
   rfl
 Conclusion "
 Garnet: There we go. You must know that all numbers are under this assumption of succesion.
 A number (A) is a successor of (A-1).
-You can extrapolate if to infinity if infinity is a countable number in the natual numbers.
+You can extrapolate it to infinity if infinity is a countable number in the natual numbers.
 Now lets prove zero_add and succ_add before proving addition communality.
 "
 
@@ -42,7 +42,9 @@ TheoremDoc add_succ as "add_succ" in "addition"
 
 
 
-
-DisabledTheorem Eq.refl Iff.refl rfl 
+theorem zero_eq_0: Nat.zero = 0:=rfl
+/--the proof that Nat.zero is equal to the number zero.-/
+TheoremDoc zero_eq_0 as "zero_eq_zero" in "Nat"
+DisabledTheorem Eq.refl Iff.refl rfl
 DisabledTactic rw rfl
-NewTheorem one_eq_succ_zero two_eq_succ_one three_eq_succ_two four_eq_succ_three refl
+NewTheorem one_eq_succ_zero two_eq_succ_one three_eq_succ_two four_eq_succ_three zero_eq_0 refl
