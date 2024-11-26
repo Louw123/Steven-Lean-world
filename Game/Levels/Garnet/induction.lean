@@ -1,5 +1,4 @@
 import GameServer.Commands
-import Game.Doc.Theorem
 World "Garnet"
 Level 2
 Title "Induction"
@@ -18,13 +17,13 @@ Now lets prove zero_add.
 "
 
 /-- given n is a Non-negative number, zero plus n is equal to n-/
-Statement zero_add (n:Nat): 0+n=n := by
+Statement zero_addd (n:Nat): 0+n=n := by
   induction n with
   |zero => {
       Hint "Garnet:We have to prove that zero plus zero is equal to zero. This case is simple"
       /-Garnet:somehow, add_succ does not work making the proof impssible to solve. -/
       /-TODO: Garnet: We muat figure out a way to Convert Nat.zero to 0, but for right now:-/
-      Hint "Garnet: It is recomended to use `simp` for this part."
+      Hint (hidden := true) "Garnet: It is recomended to use `simp` for this part for simp will replace `zero` as 0."
       rfl
   }
   |succ a b =>{
@@ -36,7 +35,7 @@ Statement zero_add (n:Nat): 0+n=n := by
   }
 
 Conclusion "Garnet: Good job. All tactics for now on are available. We need these tactics later on."
-NewTheorem zero_add
+NewTheorem Nat.zero_add
 
 /--
 induction splits a goal in two, depending on what type it is.
@@ -50,7 +49,7 @@ simp simplifies the proof.
 -/
 TacticDoc simp
 
-TheoremDoc zero_add as "zero_add" in "add"
+TheoremDoc Nat.zero_add as "Nat.zero_add" in "add"
 
 
 NewTactic induction

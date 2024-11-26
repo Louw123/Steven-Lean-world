@@ -1,5 +1,4 @@
 import GameServer.Commands
-import Game.Doc.Theorem
 World "Garnet"
 Level 1
 Title "numbers"
@@ -47,4 +46,4 @@ theorem zero_eq_0: Nat.zero = 0:=rfl
 TheoremDoc zero_eq_0 as "zero_eq_zero" in "Nat"
 DisabledTheorem Eq.refl Iff.refl rfl
 DisabledTactic rw rfl
-NewTheorem one_eq_succ_zero two_eq_succ_one three_eq_succ_two four_eq_succ_three zero_eq_0 refl
+NewTheorem one_eq_succ_zero two_eq_succ_one three_eq_succ_two four_eq_succ_three zero_eq_0 

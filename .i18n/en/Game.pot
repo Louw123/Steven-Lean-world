@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.7.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Sun Nov 10 19:42:38 2024\n"
+"POT-Creation-Date: Tue Nov 26 04:40:07 2024\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: en\n"
@@ -115,16 +115,6 @@ msgid "`apply` is a fundemental tactic in lean.\n"
 "This is useful when using a proof in which it does not obey the `a=b` format."
 msgstr ""
 
-#: Game.Levels.Saphire.Reflexivity
-msgid "the theorem rfl stands for `reflexivity of equality`. This states that a=a will be allways be a=a no matter what you change.\n"
-"rfl is also a tactic."
-msgstr ""
-
-#: Game.Levels.Saphire.Reflexivity
-msgid "This proof is simmilar to to the theorem `rfl`.\n"
-"It is recommended to use `rfl` instead of `Eq.refl`"
-msgstr ""
-
 #: Game.Levels.Saphire.add_zero
 msgid "add_zero"
 msgstr ""
@@ -169,10 +159,6 @@ msgid "Saphire: Theorems are important to prove anything in lean. Even the simpl
 "When you use a tactic, lean `apply`s a multitude of subsequent proofs to it.\n"
 "You can just use apply to finish every single goal.\n"
 "So for right now, we will be only using `apply` to prove proofs."
-msgstr ""
-
-#: Game.Doc.Theorem
-msgid "A very strict `rfl`. It is reccomended to use `rfl` instead if rfl"
 msgstr ""
 
 #: Game.Levels.Garnet.numberlogic
@@ -249,7 +235,7 @@ msgid "Garnet:We have to prove that zero plus zero is equal to zero. This case i
 msgstr ""
 
 #: Game.Levels.Garnet.induction
-msgid "Garnet: It is recomended to use `simp` for this part."
+msgid "Garnet: It is recomended to use `simp` for this part for simp will replace `zero` as 0."
 msgstr ""
 
 #: Game.Levels.Garnet.induction
@@ -275,54 +261,81 @@ msgstr ""
 msgid ""
 msgstr ""
 
-#: Game.Levels.Garnet.succ_add
-msgid "succ_add"
+#: Game.Levels.Garnet.add_succ
+msgid "add_succ"
 msgstr ""
 
-#: Game.Levels.Garnet.succ_add
+#: Game.Levels.Garnet.add_succ
 msgid "Garnet: Lets use the same technique with add zero and impliment succ_add.\n"
 "Here we are working with successors. `rfl` wont work with complicated variables like this.\n"
 "Lets use induction instead"
 msgstr ""
 
-#: Game.Levels.Garnet.succ_add
+#: Game.Levels.Garnet.add_succ
 msgid "given a and b is a Non-negative number, a successor of a plus b is equal to the successor of a plus b"
 msgstr ""
 
-#: Game.Levels.Garnet.succ_add
-msgid "Garnet: This time we must prove that 1 + b is equal to 1 +(0 + b) in which it is equal to one"
+#: Game.Levels.Garnet.add_succ
+msgid "Garnet: I recomend useing the inductive tactic of a."
 msgstr ""
 
-#: Game.Levels.Garnet.succ_add
+#: Game.Levels.Garnet.add_succ
+msgid "Garnet: We cant prove this using the theorems we have.\n"
+"To prove it you must, switch the values.\n"
+"There is a theorem, but we cant prove that until we prove this."
+msgstr ""
+
+#: Game.Levels.Garnet.add_succ
+msgid "Garnet: This time we must prove that 1 + b is equal to 1 +(0 + b) in which it is equal to one.\n"
+"It is recomended for you to use `zero_eq_zero` for this."
+msgstr ""
+
+#: Game.Levels.Garnet.add_succ
 msgid "Garnet: This time we must prove that the successor of (the successor of a number) plus a different number is equal to the successor to the successor for annother number plus annother number.\n"
 "Thanks to the induction tactic we now have a hypothesis showing the theorem we proved before."
 msgstr ""
 
-#: Game.Levels.Garnet.succ_add
+#: Game.Levels.Garnet.add_succ
+msgid "use Nat.add_succ to move the successors in."
+msgstr ""
+
+#: Game.Levels.Garnet.add_succ
 msgid "Garnet: Good job, now we can prove the communicative proprety of addition."
 msgstr ""
 
-#: Game.Levels.Garnet.succ_add
+#: Game.Levels.Garnet.add_succ
 msgid "this theorem says that n+0 is equal to zero"
 msgstr ""
 
-#: Game.Levels.Garnet.succ_add
+#: Game.Levels.Garnet.add_succ
 msgid "proof that zero plus a is equal to a."
 msgstr ""
 
-#: Game.Levels.Garnet.comm_add
-msgid "add_assoc"
+#: Game.Levels.Garnet.add_comm
+msgid "add_comm"
 msgstr ""
 
-#: Game.Levels.Garnet.comm_add
+#: Game.Levels.Garnet.add_comm
 msgid "Garnet: now lets figure out add_succ. You may do it yourself."
 msgstr ""
 
-#: Game.Levels.Garnet.comm_add
+#: Game.Levels.Garnet.add_comm
 msgid "given a and b are nat, prove that a plus b is equal to b plus a"
 msgstr ""
 
-#: Game.Levels.Garnet.comm_add
+#: Game.Levels.Garnet.add_comm
+msgid "Garnet: We must use induction in order for us to prove this."
+msgstr ""
+
+#: Game.Levels.Garnet.add_comm
+msgid "Garnet:This proof can be solved via Nat.add_succ and Nat.succ_add."
+msgstr ""
+
+#: Game.Levels.Garnet.add_comm
+msgid "Garnet: This proof is way more difficult, but can. be solved via by useing add_succ and s"
+msgstr ""
+
+#: Game.Levels.Garnet.add_comm
 msgid "Garnet: There you go. Now lets finally prove add_assoc."
 msgstr ""
 
@@ -346,14 +359,6 @@ msgstr ""
 
 #: Game.Levels.Garnet
 msgid "Garnet"
-msgstr ""
-
-#: Game.Levels.Garnet
-msgid "Garnet: Now, we can begin with simple arithmatic proofs and work our way up from here.\n"
-"I will guide you through for more complicated assumptions.\n"
-"\n"
-"Garnet: Before we begin it is recomended that you press </>, in order to change to editor mode.\n"
-"Otherwise we can contine on."
 msgstr ""
 
 #: Game.Levels.Garnet
@@ -530,6 +535,10 @@ msgid "Pearl:modus tollens is latin for \"mode that denies by denying\".\n"
 msgstr ""
 
 #: Game.Levels.Pearl.modus_tollens
+msgid "you can use `have` to get P → Q via a and «{a_1}» using this: `have c:= a «{a_1}»`"
+msgstr ""
+
+#: Game.Levels.Pearl.modus_tollens
 msgid "Pearl: congrats on completing, my world now you only have one more world for this level.\n"
 "To learn more about logic proving, you can play: \"A Lean Intro to Logic\""
 msgstr ""
@@ -543,6 +552,33 @@ msgid "Pearl: Logic gives order to chaos. Without it, we wont understand anythin
 "Even the simplist things must obey simple logic. Logic has many forms.\n"
 "Our form of logic is called Prepositional logic.\n"
 "We will start with a simple proof."
+msgstr ""
+
+#: Game.Levels.Amethyst.relation
+msgid "relation"
+msgstr ""
+
+#: Game.Levels.Amethyst.relation
+msgid "Amethyst: First you must know the basics.\n"
+"An element is a part of a set, or a group of things.\n"
+"For example I can group a house, a city, and a satilite as a man-made things.\n"
+"To show that an element in a set you use the \"∈\" symbol. We can use `apply` to prove exact sets.\n"
+"in this state"
+msgstr ""
+
+#: Game.Levels.Amethyst.relation
+msgid "Great, we can now show what ⊆ is."
+msgstr ""
+
+#: Game.Levels.Amethyst
+msgid "Amethyst"
+msgstr ""
+
+#: Game.Levels.Amethyst
+msgid "Amethyst: sup, Welcome my world.\n"
+"This world will talk about set theory.\n"
+"This is one of the well known branches of what humans call \"Mathematics.\"\n"
+"We will start with a simple statement"
 msgstr ""
 
 #: Game
@@ -572,7 +608,8 @@ msgid "Steven universe and its characters is the proprety of cartoon network and
 "Ruby image is by Gord0Hong0 in the Steven universe wiki.\n"
 "Saphire image is by TheOffColors in the Steven universe wiki.\n"
 "Garnet image is by Zombiewizard45 in the Steven universe wiki.\n"
-"Pearl image is by RylerGamerDBS, uploaded by Zacatero in the Steven universe wiki."
+"Pearl image is by RylerGamerDBS, uploaded by Zacatero in the Steven universe wiki.\n"
+"Amethyst imaage is by Zombiewizard45 in the Steven universe wiki."
 msgstr ""
 
 #: Game

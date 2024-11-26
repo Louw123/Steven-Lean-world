@@ -31,8 +31,7 @@ you can use `require mathlib from git "[URL]" @ leanVersion`
  -/
 
 
-
--- require mathlib from git "https://github.com/leanprover-community/mathlib4.git" @ leanVersion
+require mathlib from git "https://github.com/leanprover-community/mathlib4.git" @ leanVersion
 
 
 
@@ -54,4 +53,3 @@ package Game where
 
 @[default_target]
 lean_lib Game
-

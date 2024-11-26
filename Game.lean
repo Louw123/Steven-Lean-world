@@ -1,8 +1,10 @@
+
 import Game.Levels.Inception
 import Game.Levels.Ruby
 import Game.Levels.Saphire
 import Game.Levels.Garnet
 import Game.Levels.Pearl
+import Game.Levels.Amethyst
 -- Here's what we'll put on the title screen
 Title "Hello World Game"
 Introduction "
@@ -28,7 +30,7 @@ Ruby image is by Gord0Hong0 in the Steven universe wiki.
 Saphire image is by TheOffColors in the Steven universe wiki.
 Garnet image is by Zombiewizard45 in the Steven universe wiki.
 Pearl image is by RylerGamerDBS, uploaded by Zacatero in the Steven universe wiki.
-
+Amethyst imaage is by Zombiewizard45 in the Steven universe wiki.
 "
 
 /-! Information to be displayed on the servers landing page. -/
@@ -43,7 +45,10 @@ Dependency Inception → Saphire
 
 Dependency Ruby → Garnet
 Dependency Saphire → Garnet
+Dependency Garnet → Amethyst
 Dependency Garnet → Pearl
+
+
 /-! TODO: Allways check if all dependencies are correct-/
 /-! Build the game. Show's warnings if it found a problem with your game. -/
 MakeGame

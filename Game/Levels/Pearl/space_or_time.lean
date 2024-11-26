@@ -1,5 +1,5 @@
 import GameServer.Commands
-import Game.Doc.Theorem
+
 World "Pearl"
 Level 4
 Title "Talking to you"

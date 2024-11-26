@@ -1,5 +1,5 @@
 import GameServer.Commands
-import Game.Doc.Theorem
+
 World "Pearl"
 Level 5
 Title "modus_tollens"

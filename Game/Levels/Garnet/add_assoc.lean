@@ -1,11 +1,10 @@
 import GameServer.Commands
-import Game.Doc.Theorem
 World "Garnet"
 Level 5
 Title "add_assoc"
 Introduction "Garnet: now lets figure out add_succ. You may do it yourself. "
-notation "ℕ"=>Nat
-Statement add_assoc(a b c:ℕ):(a+b)+c=a+(b+c):= by{
+
+Statement addd_assoc(a b c:Nat):(a+b)+c=a+(b+c):= by{
   rw[Nat.add_assoc]
 }
 

@@ -32,19 +32,6 @@ TacticDoc apply
 
 NewTactic apply
 
-/--
-the theorem rfl stands for `reflexivity of equality`. This states that a=a will be allways be a=a no matter what you change.
-rfl is also a tactic.
--/
-TheoremDoc rfl as "rfl" in "refl"
-
-/--
-This proof is simmilar to to the theorem `rfl`.
-It is recommended to use `rfl` instead of `Eq.refl`
--/
-TheoremDoc Eq.refl as "Eq.refl" in "refl"
-
-
 NewTheorem rfl Eq.refl Iff.refl
 
 OnlyTactic apply

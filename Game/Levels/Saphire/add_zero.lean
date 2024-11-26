@@ -8,7 +8,7 @@ Saphire: Lets look at our first proof add_zero.
 We will learn more what ℕ is in the next world, but we will ignore it for right now.
 "
 /--Given n as a Nat, prove that a plus 0 equals a-/
-Statement add_zero(n:Nat): n+0=n := by
+Statement addd_zero(n:Nat): n+0=n := by
   apply Eq.refl
 
 

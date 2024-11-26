@@ -1,5 +1,5 @@
 import GameServer.Commands
-import Game.Doc.Theorem
+
 World "Pearl"
 Level 3
 Title "Space"

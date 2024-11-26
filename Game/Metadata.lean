@@ -1,7 +1,6 @@
 import GameServer.Commands
-import Game.Doc.Theorem
---import Mathlib.Tactic.Common
-
+import Mathlib.Data.Set.Basic
+import Mathlib.Algebra.Group.Defs
 /-! Use this file to add things that should be available in all levels.
 
 For example, this demo imports the mathlib tactics
@@ -17,6 +16,8 @@ that imports all its levels.
 
 /- Writer: because mathlib is not working somehow.
 This means that I must implement each matlib tactic into lean.
+
+Writer: Well, it works, but i will need to figure it out at somepoint.
 -/
 
 /- Garnet: I must implement the inducion tactic into lean. However, because mathlib does not exist,
