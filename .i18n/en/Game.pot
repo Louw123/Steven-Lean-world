@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.7.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Tue Nov 26 04:40:07 2024\n"
+"POT-Creation-Date: Tue Nov 26 15:42:34 2024\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: en\n"
@@ -535,7 +535,7 @@ msgid "Pearl:modus tollens is latin for \"mode that denies by denying\".\n"
 msgstr ""
 
 #: Game.Levels.Pearl.modus_tollens
-msgid "you can use `have` to get P → Q via a and «{a_1}» using this: `have c:= a «{a_1}»`"
+msgid "you can use `have'` to get P → Q via a and «{a_1}» using this: `have c:= a «{a_1}»`"
 msgstr ""
 
 #: Game.Levels.Pearl.modus_tollens
@@ -568,6 +568,49 @@ msgstr ""
 
 #: Game.Levels.Amethyst.relation
 msgid "Great, we can now show what ⊆ is."
+msgstr ""
+
+#: Game.Levels.Amethyst.Subsets
+msgid "subsets"
+msgstr ""
+
+#: Game.Levels.Amethyst.Subsets
+msgid "Amethyst: ⊆ is called a subset.\n"
+"It shows that the element of A is the same element in B"
+msgstr ""
+
+#: Game.Levels.Amethyst.Subsets
+msgid "Subset changes the set, from A to B. You can use apply to change the proof use apply h1,\n"
+"then you can use apply h2"
+msgstr ""
+
+#: Game.Levels.Amethyst.Subsets
+msgid "Great, we can now see what ∩ is."
+msgstr ""
+
+#: Game.Levels.Amethyst.intersection
+msgid "Intersection"
+msgstr ""
+
+#: Game.Levels.Amethyst.intersection
+msgid "Amethyst: An intersection says that there one element that is the same for both sets."
+msgstr ""
+
+#: Game.Levels.Amethyst.intersection
+msgid "We can use cases to split the intersection into two hypotheses."
+msgstr ""
+
+#: Game.Levels.Amethyst.intersection
+msgid "Now we can apply to close the proof"
+msgstr ""
+
+#: Game.Levels.Amethyst.intersection
+msgid "There we go go to pearl, or go to the next level."
+msgstr ""
+
+#: Game.Levels.Amethyst.intersection
+msgid "This tactic splits the case into two. For `∧`/`∩`, it creates two hypothesis,\n"
+"while `∨`/`∪` Splits the proof into two goals."
 msgstr ""
 
 #: Game.Levels.Amethyst
