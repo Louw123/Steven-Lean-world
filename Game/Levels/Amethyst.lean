@@ -1,4 +1,6 @@
 import Game.Levels.Amethyst.relation
+import Game.Levels.Amethyst.Subsets
+import Game.Levels.Amethyst.intersection
 World "Amethyst"
 Title "Amethyst"
 Image "images/Amethyst.webp"
