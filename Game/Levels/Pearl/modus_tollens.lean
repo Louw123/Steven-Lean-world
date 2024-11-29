@@ -10,7 +10,7 @@ This proof is usefull in coverting one item to annother."
 Statement{P Q} (a : P → Q) (b : ¬Q) : ¬P:= by {
 
     intro
-    Hint "you can use `have'` to get P → Q via a and {a_1} using this: `have c:= a {a_1}`"
+    Hint "Pearl:you can use `have'` to get P → Q via a and {a_1} using this: `have c:= a {a_1}`"
     have' c:= a a_1
     contradiction
 

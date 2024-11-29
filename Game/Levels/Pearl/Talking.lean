@@ -11,11 +11,10 @@ If we say that P is me, and Y as you, we can build a proof via an and stantemnt.
 Given that Y and p are Prop, that A is P and B is Y, prove that P and Y is true.
 -/
 Statement (Y P:Prop)(A:P)(B:Y): P∧Y := by
-  Hint"This proof cant be solved via intro. We must use `constructor` to break the and case down into two cases"
+  Hint"Pearl:This proof cant be solved via intro. We must use `constructor` to break the and case down into two cases"
   constructor
-  Hint"This proof can be solved via `exact` or `assumption`. "
+  Hint"Pearl:This proof can be solved via `exact` or `assumption`. "
   assumption
-  Hint"This proof can be solved via `exact` or `assumption`. "
   assumption
 Conclusion "Pearl: Thats great, lets see if we can prove preopsition logic using not."
 

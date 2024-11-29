@@ -6,13 +6,13 @@ Introduction "Amethyst: An intersection says that there one element that is the 
 
 
 Statement (x : U) (A B : Set U) (h1: x ∈ A)(h2: a∈A ∩ B):a∈B := by{
-  Hint "We can use cases to split the intersection into two hypotheses."
+  Hint "Amethyst:We can use cases to split the intersection into two hypotheses."
   cases h2
-  Hint "Now we can apply to close the proof"
+  Hint "Amethyst:Now we can apply {right} to close the proof"
   apply right
 }
 
-Conclusion "There we go go to pearl, or go to the next level."
+Conclusion "There we go go to the surrounding worlds, or go to the next level."
 /-- This tactic splits the case into two. For `∧`/`∩`, it creates two hypothesis,
 while `∨`/`∪` Splits the proof into two goals.-/
 TacticDoc cases

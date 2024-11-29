@@ -12,6 +12,7 @@ Statement{P Q} (hpq : P → Q) (p : P): Q:= by {
     Hint "Pearl:you know what to do now."
     assumption
 }
+Conclusion "Pearl:There we go. Now lets prove modus_tollens."
 /-- Revert does the opposite the intro.-/
 TacticDoc revert
 NewTactic revert

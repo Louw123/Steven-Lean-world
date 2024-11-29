@@ -16,7 +16,7 @@ We can start the proof by using the intro.
 /--Given that A is a preposition, A implies A-/
 Statement (A:Prop): A→A := by
   intro
-  Hint "Now we must prove the proof via `assumption` or `exact` to close the goal."
+  Hint "Pearl:Now we must prove the proof via `assumption` or `exact` to close the goal."
   assumption
 Conclusion "Pearl: Thats great, lets see if we can prove preopsition logic using and"
 

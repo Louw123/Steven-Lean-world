@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.7.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Tue Nov 26 15:42:34 2024\n"
+"POT-Creation-Date: Fri Nov 29 19:37:07 2024\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: en\n"
@@ -393,7 +393,7 @@ msgid "Given that A is a preposition, A implies A"
 msgstr ""
 
 #: Game.Levels.Pearl.Simpcity_implies_simplicity
-msgid "Now we must prove the proof via `assumption` or `exact` to close the goal."
+msgid "Pearl:Now we must prove the proof via `assumption` or `exact` to close the goal."
 msgstr ""
 
 #: Game.Levels.Pearl.Simpcity_implies_simplicity
@@ -427,15 +427,11 @@ msgid "Given that Y and p are Prop, that A is P and B is Y, prove that P and Y i
 msgstr ""
 
 #: Game.Levels.Pearl.Talking
-msgid "This proof cant be solved via intro. We must use `constructor` to break the and case down into two cases"
+msgid "Pearl:This proof cant be solved via intro. We must use `constructor` to break the and case down into two cases"
 msgstr ""
 
 #: Game.Levels.Pearl.Talking
-msgid "This proof can be solved via `exact` or `assumption`."
-msgstr ""
-
-#: Game.Levels.Pearl.Talking
-msgid "This proof can be solved via `exact` or `assumption`."
+msgid "Pearl:This proof can be solved via `exact` or `assumption`."
 msgstr ""
 
 #: Game.Levels.Pearl.Talking
@@ -522,6 +518,10 @@ msgid "Pearl:you know what to do now."
 msgstr ""
 
 #: Game.Levels.Pearl.modus_ponens
+msgid "Pearl:There we go. Now lets prove modus_tollens."
+msgstr ""
+
+#: Game.Levels.Pearl.modus_ponens
 msgid "Revert does the opposite the intro."
 msgstr ""
 
@@ -535,7 +535,7 @@ msgid "Pearl:modus tollens is latin for \"mode that denies by denying\".\n"
 msgstr ""
 
 #: Game.Levels.Pearl.modus_tollens
-msgid "you can use `have'` to get P → Q via a and «{a_1}» using this: `have c:= a «{a_1}»`"
+msgid "Pearl:you can use `have'` to get P → Q via a and «{a_1}» using this: `have c:= a «{a_1}»`"
 msgstr ""
 
 #: Game.Levels.Pearl.modus_tollens
@@ -562,12 +562,11 @@ msgstr ""
 msgid "Amethyst: First you must know the basics.\n"
 "An element is a part of a set, or a group of things.\n"
 "For example I can group a house, a city, and a satilite as a man-made things.\n"
-"To show that an element in a set you use the \"∈\" symbol. We can use `apply` to prove exact sets.\n"
-"in this state"
+"To show that an element in a set you use the \"∈\" symbol. We can use `apply` to prove exact sets."
 msgstr ""
 
 #: Game.Levels.Amethyst.relation
-msgid "Great, we can now show what ⊆ is."
+msgid "Amethyst: Great, we can now show what ⊆ is."
 msgstr ""
 
 #: Game.Levels.Amethyst.Subsets
@@ -580,12 +579,12 @@ msgid "Amethyst: ⊆ is called a subset.\n"
 msgstr ""
 
 #: Game.Levels.Amethyst.Subsets
-msgid "Subset changes the set, from A to B. You can use apply to change the proof use apply h1,\n"
-"then you can use apply h2"
+msgid "Amethyst: A Subset changes the set, from A to B. You can use apply to change the proof use `apply «{h1}»`,\n"
+"then you can use apply «{h2}»"
 msgstr ""
 
 #: Game.Levels.Amethyst.Subsets
-msgid "Great, we can now see what ∩ is."
+msgid "Amethyst: Great, we can now see what ∩ is."
 msgstr ""
 
 #: Game.Levels.Amethyst.intersection
@@ -597,15 +596,15 @@ msgid "Amethyst: An intersection says that there one element that is the same fo
 msgstr ""
 
 #: Game.Levels.Amethyst.intersection
-msgid "We can use cases to split the intersection into two hypotheses."
+msgid "Amethyst:We can use cases to split the intersection into two hypotheses."
 msgstr ""
 
 #: Game.Levels.Amethyst.intersection
-msgid "Now we can apply to close the proof"
+msgid "Amethyst:Now we can apply «{right}» to close the proof"
 msgstr ""
 
 #: Game.Levels.Amethyst.intersection
-msgid "There we go go to pearl, or go to the next level."
+msgid "There we go go to the surrounding worlds, or go to the next level."
 msgstr ""
 
 #: Game.Levels.Amethyst.intersection
@@ -621,7 +620,67 @@ msgstr ""
 msgid "Amethyst: sup, Welcome my world.\n"
 "This world will talk about set theory.\n"
 "This is one of the well known branches of what humans call \"Mathematics.\"\n"
-"We will start with a simple statement"
+"We will start with a simple statement."
+msgstr ""
+
+#: Game.Levels.Steven.Functions
+msgid "functions"
+msgstr ""
+
+#: Game.Levels.Steven.Functions
+msgid "Steven: A function is a method that takes in one thing, and outputs one thing.\n"
+"for example if i have a function $x(y)=y+1$.\n"
+"If we replace y in $x(y)$ with a number then it will output the numebr plus one.\n"
+"Functions in lean are shown with the `fun a ↦ b` syntax.\n"
+"Now lets look at one of the functions, isEven.\n"
+"  It takes in one argument `a` and returns true if the boolean if the number is divisible by two.\n"
+"  To unfold functions you can use the `unfold` Use `unfold isEven` to begin the proof."
+msgstr ""
+
+#: Game.Levels.Steven.Functions
+msgid "now you can just use rfl to finish the proof"
+msgstr ""
+
+#: Game.Levels.Steven.Functions
+msgid "Steven: Corgrats, you proved your first function. Lets prove annother function."
+msgstr ""
+
+#: Game.Levels.Steven.Functions
+msgid "It takes in one argument `a` and returns true if the boolean if the number is divisible by two."
+msgstr ""
+
+#: Game.Levels.Steven.Opposite
+msgid "Opposite"
+msgstr ""
+
+#: Game.Levels.Steven.Opposite
+msgid "Steven: Now lets look at annother function: isOdd\n"
+"It takes in one argument `a` and returns true if the boolean if the number is not divisible by two.\n"
+"Do the same thing you did with the previous proof"
+msgstr ""
+
+#: Game.Levels.Steven.Opposite
+msgid "now you can just use rfl to finish the proof"
+msgstr ""
+
+#: Game.Levels.Steven.Opposite
+msgid "Steven: Great, thats all you need to know.\n"
+"You can pick a World, or up to the next world"
+msgstr ""
+
+#: Game.Levels.Steven.Opposite
+msgid "It takes in one argument `a` and returns true if the boolean if the number is not divisible by two."
+msgstr ""
+
+#: Game.Levels.Steven
+msgid "Steven"
+msgstr ""
+
+#: Game.Levels.Steven
+msgid "Steven: Hello there, my name is steven universe.\n"
+"If you have met them, they are the crystal gems.\n"
+"I am helping them with one of L∃∀N's important part, functions.\n"
+"We will look at how functions work."
 msgstr ""
 
 #: Game
@@ -633,15 +692,15 @@ msgid "Through some sort of accident you tried when making a wormhole. You accid
 "There are living breathing humans arround. You thought that you are home. Just then, you notice, the big donut store.\n"
 "You realize that you are in beach city and that you are in the world, know as steven universe.\n"
 "You know that steven, and the crystal gems are powerful enough to take you back to home.\n"
-"However, when meeting them, you quickly realize that they are working on something. They are working on the something in the 'LE∀N: theorem prover'\n"
+"However, when meeting them, you quickly realize that they are working on something. They are working on the something in the 'L∃∀N: theorem prover'\n"
 "Just before you leave and figure out a different way a gem spots you.\n"
 "\n"
 "Garnet: Hello there human. Looks like you come from a different world. Your memory could have been erased with the trip, or maybe not.\n"
 "I and the crystal gems will help you learn how to prove things in lean and in doing so will figure out how to fix the portal.\n"
-"However, I want you to know what LE∀N Is\n"
+"However, I want you to know what L∃∀N Is\n"
 "\n"
 "\n"
-"LE∀N is a proof asistant and a flexible language that allows you to create proofs, by using tactics to try and prove the proof.\n"
+"L∃∀N is a proof asistant and a flexible language that allows you to create proofs, by using tactics to try and prove the proof.\n"
 "We will start with simple proofs and beginner tactics to more advanced proofs, to logic in sets and functional proofs"
 msgstr ""
 
@@ -652,7 +711,8 @@ msgid "Steven universe and its characters is the proprety of cartoon network and
 "Saphire image is by TheOffColors in the Steven universe wiki.\n"
 "Garnet image is by Zombiewizard45 in the Steven universe wiki.\n"
 "Pearl image is by RylerGamerDBS, uploaded by Zacatero in the Steven universe wiki.\n"
-"Amethyst imaage is by Zombiewizard45 in the Steven universe wiki."
+"Amethyst imaage is by Zombiewizard45 in the Steven universe wiki.\n"
+"Steven image is by TheOffColors in the Steven universe wiki."
 msgstr ""
 
 #: Game
