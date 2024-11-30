@@ -28,3 +28,4 @@ TheoremDoc absurd as "absurd a b" in "prop"
 
 NewTheorem absurd
 NewTactic contradiction
+DisabledTactic assumption

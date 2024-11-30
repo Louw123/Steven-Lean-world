@@ -1,0 +1,1 @@
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QOptional The conclusionary dialogue is used to show text before the proof.\\E$"}

@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.7.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Fri Nov 29 19:37:07 2024\n"
+"POT-Creation-Date: Sat Nov 30 04:26:58 2024\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: en\n"
@@ -488,7 +488,7 @@ msgid "Pearl: The left and right tactics are useful in manipulating or proofs.\n
 msgstr ""
 
 #: Game.Levels.Pearl.space_or_time
-msgid "Pearl: Thats great, lets see if we can prove functions."
+msgid "Pearl: Thats great, lets see if we can prove implications."
 msgstr ""
 
 #: Game.Levels.Pearl.space_or_time
@@ -647,6 +647,10 @@ msgstr ""
 
 #: Game.Levels.Steven.Functions
 msgid "It takes in one argument `a` and returns true if the boolean if the number is divisible by two."
+msgstr ""
+
+#: Game.Levels.Steven.Functions
+msgid "Applies and shows the contents of the function"
 msgstr ""
 
 #: Game.Levels.Steven.Opposite

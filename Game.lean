@@ -5,6 +5,14 @@ import Game.Levels.Garnet
 import Game.Levels.Pearl
 import Game.Levels.Amethyst
 import Game.Levels.Steven
+
+-- second level fusions
+import Game.Levels.F2.Opal
+import Game.Levels.F2.Rainbow
+import Game.Levels.F2.Sardonyx
+import Game.Levels.F2.Smokey
+import Game.Levels.F2.Sugilite
+import Game.Levels.F2.Sunstone
 -- Here's what we'll put on the title screen
 Title "Hello World Game"
 Introduction "

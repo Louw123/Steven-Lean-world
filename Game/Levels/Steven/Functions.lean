@@ -24,3 +24,8 @@ It takes in one argument `a` and returns true if the boolean if the number is di
 DefinitionDoc isEven as "isEven"
 
 NewDefinition isEven
+
+/-- Applies and shows the contents of the function-/
+TacticDoc unfold
+
+NewTactic unfold

@@ -12,7 +12,7 @@ Statement (S T:Prop)(s:S): S∨T:= by
   "
   left
   assumption
-Conclusion "Pearl: Thats great, lets see if we can prove functions."
+Conclusion "Pearl: Thats great, lets see if we can prove implications."
 /--left grabs the left side of or-/
 TacticDoc left
 /--right grabs the right side of or-/

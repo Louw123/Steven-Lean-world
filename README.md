@@ -1,9 +1,5 @@
 # Steven universe: A L∃∀N World
+The game is based on a series called Steven Universe. A show about a gem named Steven with Garnet (Ruby and saphire), Amethyst, and Pearl. This game takes elements of the series and with the lean Theorem Prover to make into a cohesive story. After Steven left the crystal gems, garnet, amethyst, pearl and Steven begin to prove statements in the lean theorem Prover.
 
-This is a template for creating a game with [lean4game](https://github.com/leanprover-community/lean4game/). It contains a single Level plus the files needed for a local development setup.
+The game starts off with the introduction of tactics and theorems, the expanding on the basic concepts in lean. Then those concepts combine with other concepts to prove more advanced concepts.
 
-The documentation about how to use this template are at the [lean4game repository](https://github.com/leanprover-community/lean4game/):
-
-* [Creating a new game](https://github.com/leanprover-community/lean4game/blob/main/doc/create_game.md)
-  * [Updating an existing game](https://github.com/leanprover-community/lean4game/blob/main/doc/update_game.md)
-  * [Running a game locally](https://github.com/leanprover-community/lean4game/blob/main/doc/running_locally.md)

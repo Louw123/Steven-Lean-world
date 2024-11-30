@@ -3,8 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Writer&#x27;s documentation</title>
-        <meta name="robots" content="noindex">
+        <title>How Gemsonas/OCs are handled. - Writer&#x27;s documentation</title>
 
 
         <!-- Custom HTML head -->
@@ -153,146 +152,7 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="summary"><a class="header" href="#summary">Summary</a></h1>
-<p>Hello there, I am the writer. You can also call me <code>louw123</code> This is the manual for contribution, and documentation.
-This document contains the following:</p>
-<p><a href="./Level_Structure.html">Level Structure</a> <br />
-<a href="./World_Structure.html">World Structure</a> <br />
-<a href="./Game_Structure.html">Game Structure</a> <br />
-<a href="./creditation.html">Copyright and accreditation</a></p>
-<blockquote>
-<p>🗒️ NOTE: documents is new and might change at some point.</p>
-</blockquote>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="game"><a class="header" href="#game">Game</a></h1>
-<h2 id="description"><a class="header" href="#description">description</a></h2>
-<p>The game is based on a series called Steven Universe. A show about a gem named Steven with Garnet (Ruby and saphire), Amethyst, and Pearl. This game takes elements of the series and with the lean Theorem Prover to make into a cohesive story. After Steven left the crystal gems, garnet, amethyst, pearl and Steven begin to prove statements in the lean theorem Prover.</p>
-<p>The game starts off with the introduction of tactics and theorems, the expanding on the basic concepts in lean. Then those concepts combine with other concepts to prove more advanced concepts.</p>
-<h2 id="file-structure"><a class="header" href="#file-structure">File structure</a></h2>
-<p>The file/world structure is structured like this:</p>
-<pre><code>F2:
-  F3:
-    F4:
-      Obsidian
-    Alexandrite
-  Opal
-  Sugilite
-  Sardonyx
-  Sunstone
-  Rainbow
-  Smoky Quartz
-Ruby
-Sapphire
-Garnet
-Amethyst
-Pearl
-Steven
-</code></pre>
-<p>Here are the concepts mentioned in each world:</p>
-<pre><code>
-F2:
-  F3:
-    F4:
-      Obsidian - functional proofs
-    Alexandrite - Non-functional proofs
-  Opal - Advanced set theory proofs
-  Sugilite - Natural number proofs
-  Sardonyx - non-equality proofs (extension of Steven's world)
-  Sunstone - Generating proofs for creating algorithm using decide
-  Rainbow - Functions with logic proofs
-  Smoky Quartz - functions with sets proofs
-
-Ruby - Tactics
-Sapphire - Theorems
-Garnet - arithmetic
-Amethyst - set theory
-Pearl - logic
-Steven - functions
-</code></pre>
-<blockquote>
-<p>Note: It could be considered that ruby and Sapphire is for F1 and garnet and the rest of the gems be in F2. However, it will not make any sense for the tactics and theorems must be shown before simple arithmetic.</p>
-</blockquote>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="level-structure"><a class="header" href="#level-structure">Level structure</a></h1>
-<p>A level is the building blocks of the game. To make a level you must have the following:</p>
-<p>The name of the world. This is what world the level is associated with. A level must use the theorems and tactics that are for that world. If a level usin</p>
-<p>The number of the level. For the first levels, you must show what the function or syntax work and how to prove the syntax or function. Later levels should not help the user, unless if the player is stuck on a proof.</p>
-<p>The number of the level. The level could specify a theorem or a name that relates to the proof.</p>
-<blockquote>
-<p>Optional</p>
-</blockquote>
-<p>The Introductory dialogue is used to show text before the proof.</p>
-<p>The statement is what the player has to prove. When writing a level you must prove the statement without any assumptions from other worlds. This makes sure that the world does not conflict with other worlds. In cases in which tactics or proofs are used see <a href="./Fusion_Worlds.html">Fusion Worlds</a></p>
-<blockquote>
-<p>Optional</p>
-</blockquote>
-<p>The Conclusionary dialogue is used to show text after the proof is proven.</p>
-<blockquote>
-<p>Semi-Optional You will get a warning when you omit the documentation of tactics unless if specified in the <code>Metadata.lean</code>, in a file and imported with <code>Metadata.lean</code> or is imported to the level.</p>
-</blockquote>
-<p>The documentation of a tactic/definition/theorem is where you type in the documentation of said tactic/definition/theorem.</p>
-<blockquote>
-<p>Optional</p>
-</blockquote>
-<p>The last part of the level is the inventory manipulation.
-This is where you show a tactic, a theorem, a proof or a definition.
-You can also limit tactics and theorems, via commands like <code>OnlyTactic</code> and <code>OnlyTheorem</code>. More can be found in Lean4game's Creating a game.</p>
-<p>This is the template for a level:</p>
-<pre><code class="language-lean">import GameServer.Commands
-World {World name here}
-Level {Level name here}
-Title "{Title name here}"
-
---Introduction ""
-
-Statement add_succ(a b:Nat): a + Nat.succ b = Nat.succ (a + b) := by
-  apply rfl
-
-
---Conclusion "{The conclusionary dialogue here}"
-
-/-- {Tactic name here}-/
--- TacticDoc {Tactic name here}
-
-/-- {Theorem name here}-/
---TheoremDoc {Tactic name here}
-
--- OnlyTactic {Tactic name here}
-
---OnlyTheorem {Theorem name here}
-</code></pre>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="world-structure"><a class="header" href="#world-structure">World Structure</a></h1>
-<p>The world is shown on the map of the Game. The world contains the following</p>
-<blockquote>
-<p>Semi-Optional, You will get a warning when you omit the levels.</p>
-</blockquote>
-<blockquote>
-<p>⚠️ WARNING: If you don't supply a level, the world can throw an error if you don't supply the <code>GameServer.Commands</code> package. This package is used to help with the building of the world.</p>
-</blockquote>
-<p>The levels of the world is specialized to show what a function does in lean, and how to prove them via tactics and theorems.</p>
-<p>The Title of the world is what is shown in the game. The title must be the name of a chacter from the show steven universe, or an OC (Gemsona) that relates to Steven Universe. See (how OCs are handled)[./OC.md]</p>
-<p>The World name of the world is what is used inside the game to associate worlds with levels.</p>
-<blockquote>
-<p>Optional</p>
-</blockquote>
-<pre><code class="language-lean">Title "Saphire"
-World "Saphire"
--- Image "images/Saphire.png"
-Introduction "{Text here}"
-</code></pre>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="fusion-worlds"><a class="header" href="#fusion-worlds">Fusion worlds</a></h1>
-<blockquote>
-<p>Fusions are formed when the participants are emotionally harmonious with each other. -Steven universe wiki</p>
-</blockquote>
-<h2 id="what-are-fusion-worlds"><a class="header" href="#what-are-fusion-worlds">What are Fusion worlds</a></h2>
-<p>Worlds use proofs to solve theorems. They can be self-contained.
-When a world depends on two other worlds, then the world is a fusion world.
-Fusion worlds are less limiting than normal worlds, both for the author of the world and the player because it helps with solving the proofs.</p>
-<p>Fusion worlds can increase the intricacy of the proof by proving more complicated concepts.</p>
-<p>To make a Fusion world you must be placed the file in the specific fusion folder as seen here:<br />
-F2 - fusion of two worlds
-F3 - fusion of three worlds
-F3 - fusion of four worlds</p>
-<div style="break-before: page; page-break-before: always;"></div><p>To credit your OC/Gemsona, or use an image you must credit it in the <code>Info</code> Function in the <code>Game.lean</code> file.</p>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="how-gemsonas-are-handled"><a class="header" href="#how-gemsonas-are-handled">How Gemsonas are handled.</a></h1>
+                        <h1 id="how-gemsonas-are-handled"><a class="header" href="#how-gemsonas-are-handled">How Gemsonas are handled.</a></h1>
 <p>If you want to use a Gemsona in this game, you must have an image of your Gemsona and the name of Your Gemsona.
 The world must have a concept that can be proven and be used in multiple statements.</p>
 <p>If your concept depends on other Tactics, and/or Theorems, then the Gemsona must be a fusion.
@@ -303,6 +163,9 @@ See (Fusion worlds)[Fusion_Worlds.md]</p>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="creditation.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
 
 
                         <div style="clear: both"></div>
@@ -311,6 +174,9 @@ See (Fusion worlds)[Fusion_Worlds.md]</p>
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="creditation.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
 
             </nav>
 
@@ -334,11 +200,6 @@ See (Fusion worlds)[Fusion_Worlds.md]</p>
 
         <!-- Custom JS scripts -->
 
-        <script>
-        window.addEventListener('load', function() {
-            window.setTimeout(window.print, 100);
-        });
-        </script>
 
     </div>
     </body>

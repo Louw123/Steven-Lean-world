@@ -8,7 +8,7 @@ class MDBookSidebarScrollbox extends HTMLElement {
         super();
     }
     connectedCallback() {
-        this.innerHTML = '<ol class="chapter"><li class="chapter-item expanded affix "><a href="Game_Info.html">Game</a></li><li class="chapter-item expanded affix "><a href="Level_Structure.html">Level Structure</a></li><li class="chapter-item expanded affix "><a href="World_Structure.html">World Structure</a></li><li class="chapter-item expanded "><a href="creditation.html"><strong aria-hidden="true">1.</strong> Copyright and accreditation</a></li></ol>';
+        this.innerHTML = '<ol class="chapter"><li class="chapter-item expanded affix "><a href="summary.html">Summary</a></li><li class="chapter-item expanded "><a href="Game_Info.html"><strong aria-hidden="true">1.</strong> Game</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="Level_Structure.html"><strong aria-hidden="true">1.1.</strong> level structure</a></li><li class="chapter-item expanded "><a href="World_Structure.html"><strong aria-hidden="true">1.2.</strong> World structure</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="Fusion_Worlds.html"><strong aria-hidden="true">1.2.1.</strong> Fusion worlds</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="creditation.html"><strong aria-hidden="true">2.</strong> Copyright and accreditation</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="OC.html"><strong aria-hidden="true">2.1.</strong> How Gemsonas/OCs are handled.</a></li></ol></li></ol>';
         // Set the current, active page, and reveal it if it's hidden
         let current_page = document.location.href.toString();
         if (current_page.endsWith("/")) {

@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Level Structure - Writer&#x27;s documentation</title>
+        <title>level structure - Writer&#x27;s documentation</title>
 
 
         <!-- Custom HTML head -->
@@ -153,8 +153,53 @@
                 <div id="content" class="content">
                     <main>
                         <h1 id="level-structure"><a class="header" href="#level-structure">Level structure</a></h1>
-<p>A level is the building blocks of the game. To build a level you must do the following: \n</p>
-<p>A</p>
+<p>A level is the building blocks of the game. To make a level you must have the following:</p>
+<p>The name of the world. This is what world the level is associated with. A level must use the theorems and tactics that are for that world. If a level usin</p>
+<p>The number of the level. For the first levels, you must show what the function or syntax work and how to prove the syntax or function. Later levels should not help the user, unless if the player is stuck on a proof.</p>
+<p>The number of the level. The level could specify a theorem or a name that relates to the proof.</p>
+<blockquote>
+<p>Optional</p>
+</blockquote>
+<p>The Introductory dialogue is used to show text before the proof.</p>
+<p>The statement is what the player has to prove. When writing a level you must prove the statement without any assumptions from other worlds. This makes sure that the world does not conflict with other worlds. In cases in which tactics or proofs are used see <a href="./Fusion_Worlds.html">Fusion Worlds</a></p>
+<blockquote>
+<p>Optional</p>
+</blockquote>
+<p>The Conclusionary dialogue is used to show text after the proof is proven.</p>
+<blockquote>
+<p>Semi-Optional You will get a warning when you omit the documentation of tactics unless if specified in the <code>Metadata.lean</code>, in a file and imported with <code>Metadata.lean</code> or is imported to the level.</p>
+</blockquote>
+<p>The documentation of a tactic/definition/theorem is where you type in the documentation of said tactic/definition/theorem.</p>
+<blockquote>
+<p>Optional</p>
+</blockquote>
+<p>The last part of the level is the inventory manipulation.
+This is where you show a tactic, a theorem, a proof or a definition.
+You can also limit tactics and theorems, via commands like <code>OnlyTactic</code> and <code>OnlyTheorem</code>. More can be found in Lean4game's Creating a game.</p>
+<p>This is the template for a level:</p>
+<pre><code class="language-lean">import GameServer.Commands
+World {World name here}
+Level {Level name here}
+Title "{Title name here}"
+
+--Introduction ""
+
+Statement add_succ(a b:Nat): a + Nat.succ b = Nat.succ (a + b) := by
+  apply rfl
+
+
+--Conclusion "{The conclusionary dialogue here}"
+
+/-- {Tactic name here}-/
+-- TacticDoc {Tactic name here}
+
+/-- {Theorem name here}-/
+--TheoremDoc {Tactic name here}
+
+-- OnlyTactic {Tactic name here}
+
+--OnlyTheorem {Theorem name here}
+</code></pre>
 
                     </main>
 
@@ -185,22 +230,6 @@
 
         </div>
 
-        <!-- Livereload script (if served using the cli tool) -->
-        <script>
-            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
-            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
-            const socket = new WebSocket(wsAddress);
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
 
 
 
