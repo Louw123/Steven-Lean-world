@@ -13,7 +13,7 @@ Now lets look at one of the functions, isEven.
 "
 Statement: isEven 2  := by{
   unfold isEven
-  Hint (hidden := true) "now you can just use rfl to finish the proof"
+  Hint "now you can just use rfl to finish the proof"
   apply Eq.refl
 }
 Conclusion "Steven: Corgrats, you proved your first function. Lets prove annother function."

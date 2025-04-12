@@ -11,5 +11,8 @@ We are going to use simple theorems, and make simple proofs that in which will b
 When you use a tactic, lean `apply`s a multitude of subsequent proofs to it.
 You can just use apply to finish every single goal.
 So for right now, we will be only using `apply` to prove proofs.
+
+On the right hand side, there is a list of defintions, tacticts and theorems.
+For right now, just scroll down till you find theorems
 "
 -- Saphire: Please note that one of the theorems were remove because of an error that stop the game from building.
